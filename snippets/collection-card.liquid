@@ -1,5 +1,5 @@
 {%- liquid
-  assign aspect_ratio = image.aspect_ratio
+  assign aspect_ratio = aspect_ratio | default: image.aspect_ratio
   if image_rounded
     assign aspect_ratio = 1
   endif

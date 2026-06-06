@@ -127,6 +127,86 @@
         "enable_preload_image": false
       }
     },
+    "collection_list_tabs_jgmkPx": {
+      "type": "collection-list-tabs",
+      "blocks": {
+        "tab_mA4rcK": {
+          "type": "tab",
+          "settings": {
+            "title": "Contemporary Sets",
+            "collection_1": "cubic-zirconia-full-necklace-set",
+            "image_1": "shopify://shop_images/210322_gemini_generated_image_eck2f1eck2f1eck2.png",
+            "collection_2": "cubic-zirconia-choker-earring-set",
+            "image_2": "shopify://shop_images/210319_gemini_generated_image_4rwtan4rwtan4rwt.png",
+            "collection_3": "cubic-zirconia-necklace-earring-set",
+            "image_3": "shopify://shop_images/210321_gemini_generated_image_fgf4f8fgf4f8fgf4.png",
+            "collection_4": "cubic-zirconia-pendant-earring-set",
+            "image_4": "shopify://shop_images/209891_gemini_generated_image_rf5yburf5yburf5y.png",
+            "collection_5": "",
+            "collection_6": ""
+          }
+        },
+        "tab_GJ6KW8": {
+          "type": "tab",
+          "settings": {
+            "title": "Ethnic Wear",
+            "collection_1": "",
+            "collection_2": "",
+            "collection_3": "",
+            "collection_4": "",
+            "collection_5": "",
+            "collection_6": ""
+          }
+        },
+        "tab_CJBrr9": {
+          "type": "tab",
+          "settings": {
+            "title": "Other Sets",
+            "collection_1": "",
+            "collection_2": "",
+            "collection_3": "",
+            "collection_4": "",
+            "collection_5": "",
+            "collection_6": ""
+          }
+        }
+      },
+      "block_order": [
+        "tab_mA4rcK",
+        "tab_GJ6KW8",
+        "tab_CJBrr9"
+      ],
+      "name": "Collection list tabs",
+      "settings": {
+        "heading": "",
+        "heading_size": "h3",
+        "subheading": "",
+        "description": "",
+        "header_alignment": "center",
+        "container": "container-fluid",
+        "color_scheme": "",
+        "tab_header": "horizontal",
+        "tab_heading_size": "h5",
+        "card_style": "standard",
+        "card_heading_size": "h5",
+        "text_alignment": "left",
+        "hover_effect": "scaling-down",
+        "show_product_count": true,
+        "image_rounded": false,
+        "items_per_row": 4,
+        "item_gap": 30,
+        "enable_slider": false,
+        "show_navigation": true,
+        "show_pagination": false,
+        "mobile_disable_slider": false,
+        "use_scroll_mobile": true,
+        "item_gap_mobile": 16,
+        "padding_top": 18,
+        "padding_bottom": 50,
+        "custom_class": "",
+        "animations": "inherit"
+      }
+    },
     "product_tabs_qtNJGk": {
       "type": "product-tabs",
       "blocks": {
@@ -157,6 +237,7 @@
         "tab_6KFrCC",
         "tab_MW4GXG"
       ],
+      "disabled": true,
       "name": "Product tabs",
       "settings": {
         "heading": "",
@@ -556,6 +637,7 @@
     "image_with_text_2_iaiMkw",
     "featured_collection_banner_NJHGkP",
     "image_with_text_2_NwtWkt",
+    "collection_list_tabs_jgmkPx",
     "product_tabs_qtNJGk",
     "collection_list_8DCrPf",
     "collection_list_AiVFMc",

@@ -11,6 +11,7 @@
   assign show_product_count = section.settings.show_product_count
   assign hover_effect = section.settings.hover_effect
   assign image_rounded = section.settings.image_rounded
+  assign image_aspect_ratio = section.settings.image_aspect_ratio
 
   assign enable_slider = false
   assign mobile_disable_slider = section.settings.mobile_disable_slider
@@ -219,6 +220,7 @@
                             image_rounded: image_rounded,
                             hover_effect: hover_effect,
                             image: block.settings[img_key],
+                            aspect_ratio: image_aspect_ratio,
                             index: forloop.index,
                             animated: animated,
                             animation_effect: animation_effect
@@ -236,7 +238,7 @@
                             {% endif %}
                           >
                             <div class="m-collection-card__inner">
-                              <div style="--aspect-ratio: 1/1;">
+                              <div style="--aspect-ratio: {{ image_aspect_ratio | default: '1/1' }};">
                                 {% capture current %}{% cycle 1, 2, 3, 4, 5, 6 %}{% endcapture %}
                                 {{ 'collection-' | append: current | placeholder_svg_tag: 'm-placeholder-svg' }}
                               </div>
@@ -434,6 +436,19 @@
       "id": "image_rounded",
       "label": "Image rounded",
       "default": false
+    },
+    {
+      "type": "select",
+      "id": "image_aspect_ratio",
+      "label": "Image aspect ratio",
+      "default": "1/1",
+      "options": [
+        { "value": "1/1", "label": "Square (1:1)" },
+        { "value": "3/4", "label": "Portrait (3:4)" },
+        { "value": "4/3", "label": "Landscape (4:3)" },
+        { "value": "16/9", "label": "Wide (16:9)" },
+        { "value": "2/3", "label": "Tall (2:3)" }
+      ]
     },
     {
       "type": "header",
