@@ -1,0 +1,566 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "image_with_text_2_iaiMkw": {
+      "type": "image-with-text-2",
+      "name": "Image with text overlay",
+      "settings": {
+        "color_scheme": "",
+        "container": "w-full",
+        "hero_size": "medium",
+        "show_overlay": false,
+        "image": "shopify://shop_images/210276_gemini_generated_image_sdjmv6sdjmv6sdjm-1_416c6bb6-8d06-4619-a477-01085130c6fa.png",
+        "image_link": "",
+        "parallax": false,
+        "parallax_direction": "vertical",
+        "content_in_container": false,
+        "content_position": "right middle",
+        "text_alignment": "center",
+        "text_color": "white",
+        "title": "Shop by Categories",
+        "text_size": "h2",
+        "subtitle": "",
+        "text": "<p>We have a range of categories for you to pick from</p>",
+        "desc_size": "text-sm",
+        "button_label": "",
+        "button_link": "",
+        "button_style": "m-button--primary",
+        "button_size": "",
+        "text_alignment_mobile": "right",
+        "use_content_above": true,
+        "custom_class": "",
+        "animations": "inherit",
+        "enable_bg_zoom_effect": true,
+        "enable_preload_image": false
+      }
+    },
+    "featured_collection_banner_NJHGkP": {
+      "type": "featured-collection-banner",
+      "blocks": {
+        "image_card_P8WctD": {
+          "type": "image_card",
+          "settings": {
+            "color_scheme": "",
+            "image": "shopify://shop_images/210463_gemini_generated_image_jo7dgojo7dgojo7d_9f25f6dd-b004-4860-98c5-649e8a4acfd7.png",
+            "link": "",
+            "content_position": "bottom_left",
+            "content_alignment": "left",
+            "text_color": "white",
+            "subtitle": "",
+            "title": "Shop Bridal",
+            "text_size": "h2",
+            "button_label": "Shop All",
+            "button_style": "m-button--link",
+            "button_size": "",
+            "block_custom_class": "",
+            "enable_preload_image": false
+          }
+        }
+      },
+      "block_order": [
+        "image_card_P8WctD"
+      ],
+      "name": "Product list banner",
+      "settings": {
+        "heading": "",
+        "heading_size": "h3",
+        "subheading": "",
+        "description": "",
+        "header_alignment": "center",
+        "color_scheme": "",
+        "container": "container-fluid",
+        "collection": "bridal-sets-complete",
+        "product_to_show": 6,
+        "item_gap": 30,
+        "row_gap": 30,
+        "pcard_layout": "5",
+        "pcard_image_ratio": "",
+        "show_vendor": false,
+        "hide_title": false,
+        "use_scroll_mobile": true,
+        "item_gap_mobile": 8,
+        "row_gap_mobile": 16,
+        "padding_top": 50,
+        "padding_bottom": 50,
+        "custom_class": "",
+        "animations": "inherit"
+      }
+    },
+    "image_with_text_2_NwtWkt": {
+      "type": "image-with-text-2",
+      "name": "Image with text overlay",
+      "settings": {
+        "color_scheme": "",
+        "container": "w-full",
+        "hero_size": "small",
+        "show_overlay": true,
+        "image": "shopify://shop_images/210426_gemini_generated_image_20fxjv20fxjv20fx_48b91de6-2978-42e6-8184-0c2c4efea8c3.png",
+        "image_link": "",
+        "parallax": false,
+        "parallax_direction": "vertical",
+        "content_in_container": false,
+        "content_position": "center middle",
+        "text_alignment": "center",
+        "text_color": "white",
+        "title": "Shop Necklaces",
+        "text_size": "h2",
+        "subtitle": "",
+        "text": "<p>Use overlay text to give your customers insight into your brand. Select imagery and text that relates to your style and story.</p>",
+        "desc_size": "text-base",
+        "button_label": "",
+        "button_link": "",
+        "button_style": "m-button--primary",
+        "button_size": "",
+        "text_alignment_mobile": "center",
+        "use_content_above": true,
+        "custom_class": "",
+        "animations": "inherit",
+        "enable_bg_zoom_effect": true,
+        "enable_preload_image": false
+      }
+    },
+    "product_tabs_qtNJGk": {
+      "type": "product-tabs",
+      "blocks": {
+        "tab_3brNgW": {
+          "type": "tab",
+          "settings": {
+            "title": "Contemporary Sets",
+            "collection": ""
+          }
+        },
+        "tab_6KFrCC": {
+          "type": "tab",
+          "settings": {
+            "title": "Ethnic Wear",
+            "collection": ""
+          }
+        },
+        "tab_MW4GXG": {
+          "type": "tab",
+          "settings": {
+            "title": "Other Sets",
+            "collection": ""
+          }
+        }
+      },
+      "block_order": [
+        "tab_3brNgW",
+        "tab_6KFrCC",
+        "tab_MW4GXG"
+      ],
+      "name": "Product tabs",
+      "settings": {
+        "heading": "",
+        "heading_size": "h3",
+        "subheading": "",
+        "description": "",
+        "header_alignment": "center",
+        "container": "container-fluid",
+        "color_scheme": "",
+        "tab_header": "horizontal",
+        "tab_heading_size": "h5",
+        "limit": 4,
+        "show_button": false,
+        "button_type": "link",
+        "button_label": "View all",
+        "button_style": "m-button--primary",
+        "button_size": "",
+        "pcard_layout": "",
+        "pcard_image_ratio": "",
+        "show_vendor": false,
+        "items_per_row": 4,
+        "item_gap": 16,
+        "enable_slider": false,
+        "show_navigation": true,
+        "show_pagination": false,
+        "mobile_disable_slider": false,
+        "use_scroll_mobile": true,
+        "item_gap_mobile": 16,
+        "padding_top": 12,
+        "padding_bottom": 0,
+        "custom_class": "",
+        "animations": "inherit"
+      }
+    },
+    "collection_list_8DCrPf": {
+      "type": "collection-list",
+      "blocks": {
+        "collection_block_xKgbWP": {
+          "type": "collection_block",
+          "settings": {
+            "collection": "bridal-shoes",
+            "title": "Bridal Shoes",
+            "item_image": "shopify://shop_images/210950_silver-rhine-stone-designer-pointy-heels-image.jpg"
+          }
+        },
+        "collection_block_BwBVmC": {
+          "type": "collection_block",
+          "settings": {
+            "collection": "fancy-shoes",
+            "title": "Fancy Shoes",
+            "item_image": "shopify://shop_images/211092_amazing-designer-embroidered-flat-sandals-image.jpg"
+          }
+        },
+        "collection_block_6t8m7f": {
+          "type": "collection_block",
+          "settings": {
+            "collection": "fancy-wedges",
+            "title": "Fancy Wedges",
+            "item_image": "shopify://shop_images/211210_elegant-gold-toe-ring-heeled-sandals-image.jpg"
+          }
+        },
+        "collection_block_XJCWjw": {
+          "type": "collection_block",
+          "settings": {
+            "collection": "ethnic-juttis",
+            "title": "Ethnic Juttis",
+            "item_image": "shopify://shop_images/258944_elegant-designer-leather-jhuttis-image.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "collection_block_xKgbWP",
+        "collection_block_BwBVmC",
+        "collection_block_6t8m7f",
+        "collection_block_XJCWjw"
+      ],
+      "name": "Collection list",
+      "settings": {
+        "heading": "Shop Shoes",
+        "heading_size": "h2",
+        "subheading": "",
+        "description": "",
+        "button_label": "",
+        "button_link": "",
+        "button_style": "m-button--primary",
+        "header_alignment": "center",
+        "color_scheme": "",
+        "container": "container-fluid",
+        "layout": "grid",
+        "expanded": true,
+        "card_style": "standard",
+        "card_heading_size": "h5",
+        "text_alignment": "left",
+        "hover_effect": "scaling-down",
+        "show_product_count": true,
+        "count_inline_title": true,
+        "image_rounded": false,
+        "items_per_row": 4,
+        "item_gap": 14,
+        "enable_slider": false,
+        "show_pagination": false,
+        "show_navigation": false,
+        "autorotate": false,
+        "autorotate_speed": 5,
+        "mobile_disable_slider": false,
+        "use_scroll_mobile": true,
+        "mobile_gap": 10,
+        "hidden_slide_control_mobile": false,
+        "padding_top": 50,
+        "padding_bottom": 50,
+        "custom_class": "",
+        "animations": "inherit"
+      }
+    },
+    "collection_list_AiVFMc": {
+      "type": "collection-list",
+      "blocks": {
+        "collection_block_nRwBwr": {
+          "type": "collection_block",
+          "settings": {
+            "collection": "bridal-clutches",
+            "title": "Bridal Clutches",
+            "item_image": "{{ block.settings.collection.image }}"
+          }
+        },
+        "collection_block_wQNtVG": {
+          "type": "collection_block",
+          "settings": {
+            "collection": "copper-clutches",
+            "title": "Copper Clutches",
+            "item_image": "{{ block.settings.collection.image }}"
+          }
+        },
+        "collection_block_E7wrJD": {
+          "type": "collection_block",
+          "settings": {
+            "collection": "hard-frame-clutch",
+            "title": "Hard Frame Clutch",
+            "item_image": "{{ block.settings.collection.image }}"
+          }
+        },
+        "collection_block_7TWimr": {
+          "type": "collection_block",
+          "settings": {
+            "collection": "soft-batwas-pouches",
+            "title": "Soft Batwas",
+            "item_image": "{{ block.settings.collection.image }}"
+          }
+        },
+        "collection_block_eGJ6gd": {
+          "type": "collection_block",
+          "settings": {
+            "collection": "party-clutch",
+            "title": "Party Clutch",
+            "item_image": "{{ block.settings.collection.image }}"
+          }
+        }
+      },
+      "block_order": [
+        "collection_block_nRwBwr",
+        "collection_block_wQNtVG",
+        "collection_block_E7wrJD",
+        "collection_block_7TWimr",
+        "collection_block_eGJ6gd"
+      ],
+      "name": "Collection list",
+      "settings": {
+        "heading": "Shop Bags",
+        "heading_size": "h2",
+        "subheading": "",
+        "description": "",
+        "button_label": "",
+        "button_link": "",
+        "button_style": "m-button--primary",
+        "header_alignment": "center",
+        "color_scheme": "",
+        "container": "container-fluid",
+        "layout": "grid",
+        "expanded": true,
+        "card_style": "standard",
+        "card_heading_size": "h5",
+        "text_alignment": "left",
+        "hover_effect": "scaling-down",
+        "show_product_count": true,
+        "count_inline_title": true,
+        "image_rounded": false,
+        "items_per_row": 5,
+        "item_gap": 14,
+        "enable_slider": false,
+        "show_pagination": false,
+        "show_navigation": false,
+        "autorotate": false,
+        "autorotate_speed": 5,
+        "mobile_disable_slider": false,
+        "use_scroll_mobile": true,
+        "mobile_gap": 10,
+        "hidden_slide_control_mobile": false,
+        "padding_top": 50,
+        "padding_bottom": 50,
+        "custom_class": "",
+        "animations": "inherit"
+      }
+    },
+    "banner_with_slider_zgGTAi": {
+      "type": "banner-with-slider",
+      "blocks": {
+        "item_slide_CqWrHB": {
+          "type": "item_slide",
+          "disabled": true,
+          "settings": {
+            "color_scheme": "",
+            "content_text_color": "black",
+            "content_position": "left middle",
+            "text_alignment": "left",
+            "subheading": "Hot this week",
+            "heading": "Chenille sweater with<br> raglan sleeves",
+            "text_size": "h2",
+            "description": "",
+            "desc_size": "text-base",
+            "button_text": "Shop Now",
+            "button_link": "",
+            "button_style": "m-button--link",
+            "button_size": ""
+          }
+        },
+        "item_slide_AYcNdK": {
+          "type": "item_slide",
+          "disabled": true,
+          "settings": {
+            "color_scheme": "",
+            "content_text_color": "black",
+            "content_position": "left middle",
+            "text_alignment": "left",
+            "subheading": "Hot this week",
+            "heading": "Chenille sweater with<br> raglan sleeves",
+            "text_size": "h2",
+            "description": "",
+            "desc_size": "text-base",
+            "button_text": "Shop Now",
+            "button_link": "",
+            "button_style": "m-button--link",
+            "button_size": ""
+          }
+        },
+        "item_slide_LYiRg7": {
+          "type": "item_slide",
+          "settings": {
+            "item_image": "shopify://shop_images/210211_gemini_generated_image_m273f2m273f2m273.png",
+            "color_scheme": "",
+            "content_text_color": "white",
+            "content_position": "left middle",
+            "text_alignment": "left",
+            "subheading": "",
+            "heading": "Chenille sweater with<br> raglan sleeves",
+            "text_size": "h2",
+            "description": "",
+            "desc_size": "text-base",
+            "button_text": "Shop Now",
+            "button_link": "",
+            "button_style": "m-button--link",
+            "button_size": ""
+          }
+        }
+      },
+      "block_order": [
+        "item_slide_CqWrHB",
+        "item_slide_AYcNdK",
+        "item_slide_LYiRg7"
+      ],
+      "disabled": true,
+      "name": "Image with slider 2",
+      "settings": {
+        "subheading": "",
+        "heading": "",
+        "heading_size": "h3",
+        "header_alignment": "center",
+        "layout": "layout-2",
+        "container": "container-fluid",
+        "color_scheme": "",
+        "slide_autoplay": false,
+        "pagination_position": "left",
+        "autorotate_speed": 5,
+        "columns_mobile": "2",
+        "use_scroll_mobile": false,
+        "button_text_1": "Shop Now",
+        "button_link_1": "",
+        "button_style_1": "m-button--white",
+        "button_size_1": "",
+        "button_text_2": "Shop Now",
+        "button_link_2": "",
+        "button_style_2": "m-button--white",
+        "button_size_2": "",
+        "button_text_3": "Shop Now",
+        "button_link_3": "",
+        "button_style_3": "m-button--white",
+        "button_size_3": "",
+        "button_text_4": "Shop Now",
+        "button_link_4": "",
+        "button_style_4": "m-button--white",
+        "button_size_4": "",
+        "padding_top": 50,
+        "padding_bottom": 50,
+        "custom_class": "",
+        "animations": "inherit"
+      }
+    },
+    "main": {
+      "type": "collection-list-template",
+      "disabled": true,
+      "custom_css": [
+        ".m-collection-card__title {font-weight: 500;}"
+      ],
+      "settings": {
+        "container": "container-fluid",
+        "display_type": "all",
+        "title": "All collection",
+        "description": "<p>Here is your chance to upgrade your wardrobe <br/>with a variation of styles and fits that are both feminine and relaxed.</p>",
+        "header_alignment": "left",
+        "items_per_row": 4,
+        "item_gap": 30,
+        "mobile_columns": "2",
+        "mobile_gap": 16,
+        "card_style": "inside-2",
+        "card_heading_size": "h6",
+        "text_alignment": "center",
+        "hover_effect": "scaling-up",
+        "show_product_count": true,
+        "count_inline_title": true,
+        "image_rounded": false
+      }
+    },
+    "collection_showcase_hFEFCQ": {
+      "type": "collection-showcase",
+      "blocks": {
+        "collection_P4etVJ": {
+          "type": "collection",
+          "settings": {
+            "title": "Collection title",
+            "collection": "",
+            "subheading": "",
+            "heading": "",
+            "heading_size": "h2",
+            "button_text": "Shop more",
+            "button_style": "m-button--primary",
+            "button_size": ""
+          }
+        },
+        "collection_NKXeag": {
+          "type": "collection",
+          "settings": {
+            "title": "Collection title",
+            "collection": "",
+            "subheading": "",
+            "heading": "",
+            "heading_size": "h2",
+            "button_text": "Shop more",
+            "button_style": "m-button--primary",
+            "button_size": ""
+          }
+        },
+        "collection_9tTA8y": {
+          "type": "collection",
+          "settings": {
+            "title": "Collection title",
+            "collection": "",
+            "subheading": "",
+            "heading": "",
+            "heading_size": "h2",
+            "button_text": "Shop more",
+            "button_style": "m-button--primary",
+            "button_size": ""
+          }
+        }
+      },
+      "block_order": [
+        "collection_P4etVJ",
+        "collection_NKXeag",
+        "collection_9tTA8y"
+      ],
+      "disabled": true,
+      "name": "Collection showcase",
+      "settings": {
+        "container": "container-fluid",
+        "color_scheme": "",
+        "color_scheme_tab": "",
+        "image_position": "right",
+        "product_to_show": 3,
+        "pcard_image_ratio": "original",
+        "padding_top": 50,
+        "padding_bottom": 50,
+        "custom_class": "",
+        "animations": "inherit"
+      }
+    }
+  },
+  "order": [
+    "image_with_text_2_iaiMkw",
+    "featured_collection_banner_NJHGkP",
+    "image_with_text_2_NwtWkt",
+    "product_tabs_qtNJGk",
+    "collection_list_8DCrPf",
+    "collection_list_AiVFMc",
+    "banner_with_slider_zgGTAi",
+    "main",
+    "collection_showcase_hFEFCQ"
+  ]
+}
