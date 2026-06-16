@@ -1,0 +1,199 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "page-contact",
+      "disabled": true,
+      "settings": {
+        "container": "container"
+      }
+    },
+    "image_with_text_2_aBh9k8": {
+      "type": "image-with-text-2",
+      "name": "Image with text overlay",
+      "settings": {
+        "color_scheme": "",
+        "container": "w-full",
+        "hero_size": "small",
+        "show_overlay": true,
+        "image_link": "",
+        "parallax": false,
+        "parallax_direction": "vertical",
+        "content_in_container": false,
+        "content_position": "center middle",
+        "text_alignment": "center",
+        "text_color": "white",
+        "title": "Wholesalers and Resellers Guide",
+        "text_size": "h2",
+        "subtitle": "",
+        "text": "<p>Please Fill Out The Form Below To Set Up Your Resellers Account To Get The Maximum Advantage</p>",
+        "desc_size": "text-base",
+        "button_label": "",
+        "button_link": "",
+        "button_style": "m-button--primary",
+        "button_size": "",
+        "text_alignment_mobile": "center",
+        "use_content_above": false,
+        "custom_class": "",
+        "animations": "inherit",
+        "enable_bg_zoom_effect": true,
+        "enable_preload_image": false
+      }
+    },
+    "image_with_text_eGyeP8": {
+      "type": "image-with-text",
+      "name": "Image with text",
+      "settings": {
+        "heading": "",
+        "heading_size": "h3",
+        "subheading": "",
+        "container": "container-fluid",
+        "color_scheme": "",
+        "item_gap": 100,
+        "item_gap_mobile": 30,
+        "layout": "left",
+        "image_column_size": "6",
+        "image_overlap": false,
+        "show_image_reverse": false,
+        "hover_effect": false,
+        "image_animation": "none",
+        "link": "",
+        "link_2": "",
+        "second_image_offset_top": 10,
+        "sub_title": "About Us",
+        "title": "Why Choose Pearlings?",
+        "text_size": "h2",
+        "text": "<p>Having been in the fashion jewelry business close to 4 decades, Abbas Ramakdawala and the entire Pearlings team is well equipped to satisfy all your jewelry and accessory needs. We are based in the middle east and are the number 1 importer of bridal jewelry in the United States. The benefits of becoming a wholesale reseller of Pearlings Designer collection is an extremely unique opportunity for you to expand your product base. You cannot find our exclusive range of products anywhere else in Houston, TX. We provide wholesale opportunities for resellers. We have top-notch jewelry and accessories imported from countries like Dubai & India. We assure all resellers that Pearlings will find you a competitive price, giving you an equal opportunity for growth. The advantage of being a Pearlings Designer Collection reseller is unlike any other. You will find products at Pearlings that you cannot find with any other vendor in the U.S.</p>",
+        "desc_size": "text-lg",
+        "content_alignment": "left",
+        "button_label": "Explore Collection",
+        "button_link": "",
+        "button_style": "m-button--link",
+        "button_size": "",
+        "padding_top": 50,
+        "padding_bottom": 50,
+        "custom_class": "",
+        "animations": "inherit"
+      }
+    },
+    "rich_text_6qjxrt": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_xinGYj": {
+          "type": "heading",
+          "settings": {
+            "heading": "Wholesale Opportunities for Retailers & Resellers",
+            "heading_size": "h2"
+          }
+        },
+        "text_VUmzGn": {
+          "type": "text",
+          "settings": {
+            "text": "<p>At Pearlings Designer Collection, we make wholesale jewelry sourcing simple. With years of experience in international importing, customs clearance, and logistics, we handle the entire process so you can focus on growing your business.</p><p>Gain access to our exclusive collection of luxury, ethnic, and designer jewelry—carefully sourced to help your store stand out. Looking for something specific? We can also source custom products based on your requirements.</p><h3>Why Partner WIth Us:</h3><ul><li>Exclusive and distinctive jewelry collections</li><li>Hassle-free importing and supply management</li><li>Competitive wholesale pricing</li><li>Custom sourcing available on request</li><li>Commitment to quality and customer satisfaction<br/></li></ul><p>We value long-term partnerships with retailers who share our dedication to delivering exceptional products and service. Wherever your business is located, we’re ready to help you expand your collection and delight your customers.</p><p><strong>Get in touch today. </strong>No matter where you are located, <strong>we will make a bargain</strong>.</p>",
+            "text_size": "text-lg"
+          }
+        },
+        "button_LBLHVM": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "button_label": "Shop Collection",
+            "button_link": "",
+            "button_style": "m-button--link",
+            "button_size": ""
+          }
+        }
+      },
+      "block_order": [
+        "heading_xinGYj",
+        "text_VUmzGn",
+        "button_LBLHVM"
+      ],
+      "name": "Rich text",
+      "settings": {
+        "container": "container",
+        "color_scheme": "",
+        "content_alignment": "left",
+        "padding_top": 52,
+        "padding_bottom": 52,
+        "custom_class": "",
+        "animations": "inherit"
+      }
+    },
+    "contact-form": {
+      "type": "contact-form",
+      "blocks": {
+        "text-block-1": {
+          "type": "textblock",
+          "disabled": true,
+          "settings": {
+            "title": "Address",
+            "heading_size": "h5",
+            "content": "<p>7895 Piermont Dr NE Albuquerque, <br/>NM 198866, <a href=\"#\">See Our Stores</a></p>"
+          }
+        },
+        "text-block-2": {
+          "type": "textblock",
+          "disabled": true,
+          "settings": {
+            "title": "Information",
+            "heading_size": "h5",
+            "content": "<p>+391 (0)35 2568 4593</p><p>hello@domain.com</p>"
+          }
+        },
+        "text-block-3": {
+          "type": "socialmedia",
+          "disabled": true,
+          "settings": {
+            "title": "Social Media"
+          }
+        },
+        "text-block-4": {
+          "type": "textblock",
+          "disabled": true,
+          "settings": {
+            "title": "We're Open",
+            "heading_size": "h5",
+            "content": "<p>Our store has re-opened for shopping, exchanges</p><p>Every day 11am to 7pm</p>"
+          }
+        }
+      },
+      "block_order": [
+        "text-block-1",
+        "text-block-2",
+        "text-block-3",
+        "text-block-4"
+      ],
+      "custom_css": [
+        ".m-contact-form__heading,.m-info-box__title {font-weight: 500;}"
+      ],
+      "settings": {
+        "container": "w-full",
+        "title": "We would love to hear from you.",
+        "heading_size": "h4",
+        "description": "<p>If you’ve got great products your making or looking to work with us then drop us a line.</p>",
+        "show_name": true,
+        "show_phone": false,
+        "show_signup_email": true,
+        "padding_top": 60,
+        "padding_bottom": 0,
+        "animations": "inherit"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "image_with_text_2_aBh9k8",
+    "image_with_text_eGyeP8",
+    "rich_text_6qjxrt",
+    "contact-form"
+  ]
+}

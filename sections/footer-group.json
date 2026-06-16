@@ -102,11 +102,11 @@
         ".social-media-links a:hover {background-color: #222; color: #fff; box-shadow: 0 0 0 0.2rem #222;}"
       ],
       "settings": {
-        "color_scheme": "",
+        "color_scheme": "scheme-plum",
         "design": "footer-1",
         "container": "container-fluid",
         "bordered": false,
-        "copyright": "© MINIMOG [year]",
+        "copyright": "All Rights Reserved © Pearlings",
         "show_country_selector": false,
         "show_currency_selector": false,
         "show_language_selector": false,

@@ -46,7 +46,7 @@
       ],
       "settings": {
         "container": "container",
-        "color_scheme": "dark",
+        "color_scheme": "scheme-plum",
         "show_announcement": true,
         "homepage_only": true,
         "show_close": true,
@@ -58,9 +58,30 @@
     },
     "header": {
       "type": "header",
+      "blocks": {
+        "collection_list_tWVycB": {
+          "type": "collection-list",
+          "disabled": true,
+          "settings": {
+            "heading": "Shop By Collection",
+            "container": "inherit",
+            "collection_1": "bridal-sets-complete",
+            "image_1": "shopify://shop_images/210463_gemini_generated_image_jo7dgojo7dgojo7d_9f25f6dd-b004-4860-98c5-649e8a4acfd7.png",
+            "collection_2": "necklace-set",
+            "image_2": "shopify://shop_images/210426_gemini_generated_image_20fxjv20fxjv20fx_48b91de6-2978-42e6-8184-0c2c4efea8c3.png",
+            "collection_3": "",
+            "collection_4": "",
+            "collection_5": "",
+            "collection_6": ""
+          }
+        }
+      },
+      "block_order": [
+        "collection_list_tWVycB"
+      ],
       "settings": {
-        "color_scheme": "",
-        "color_scheme_menu": "default",
+        "color_scheme": "default",
+        "color_scheme_menu": "scheme-blush",
         "header_design": "logo-center__2l",
         "container": "container-fluid",
         "sticky_header": "on_scroll_up",
@@ -77,7 +98,7 @@
         "mobile_logo_max_width": 165,
         "main_menu": "main-menu",
         "secondary_menu": "",
-        "mobile_menu": "",
+        "mobile_menu": "main-menu-copy",
         "uppercase_parent_level": false,
         "show_menu_column_divider": true,
         "search": "show_icon",

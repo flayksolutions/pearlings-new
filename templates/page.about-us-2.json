@@ -11,7 +11,6 @@
   "sections": {
     "main": {
       "type": "page-about-us",
-      "disabled": true,
       "settings": {}
     },
     "custom-content": {
@@ -32,6 +31,7 @@
       "block_order": [
         "be5d2488-3c71-471f-bb75-dbccb6970cb0"
       ],
+      "custom_css": [],
       "settings": {
         "heading": "",
         "heading_size": "h3",
@@ -63,12 +63,12 @@
             "width": "100%",
             "alignment": "center",
             "align_text": "center",
-            "title": "About Pearlings",
+            "title": "It pains me physically to see woman victimized, rendered pathetic by fashion.",
             "text_size": "h3",
             "subheading": "",
             "text": "",
-            "desc_size": "text-lg",
-            "text_color": "black",
+            "desc_size": "text-base",
+            "text_color": "inherit",
             "button_label": "",
             "button_link": "",
             "button_style": "sf__btn-primary",
@@ -82,13 +82,13 @@
           "settings": {
             "width": "100%",
             "alignment": "center",
-            "align_text": "center",
-            "title": "",
+            "align_text": "left",
+            "title": "<span class=\"m:font-medium m:text-xl\">Awkwardness gives me great comfort. I’ve never been cool, but I’ve felt cool. I’ve been in the cool place, but I wasn’t really cool – I was trying to pass for hip or cool.</span>",
             "text_size": "h5",
             "subheading": "",
-            "text": "<p>Pearlings was born from a simple vision to make beautiful, high-quality jewelry accessible to girls, brides, and everyone who cherishes jewelry, no matter where they are in the world. Every piece is thoughtfully curated to bring beauty and confidence to every occasion.</p>",
-            "desc_size": "text-lg",
-            "text_color": "black",
+            "text": "<p>A girl should be two things: classy and fabulous. I am convinced that there can be luxury in simplicity. I wanted to dress the woman who lives and works, not the woman in a painting. It’s hard to balance everything. It’s always challenging. My relationships with producers or photographers – these are relationships that took years. I can’t get sucked into that celebrity thing, because I think it’s just crass. My aim is to make the poor look rich and the rich look poor. Vanity is the healthiest thing in life. I believe that my clothes can give people a better image of themselves – that it can increase their feelings of confidence and happiness. You can hide so much behind theatrics, and I don’t need to do that any more. I don’t really know how to do casual clothes.</p>",
+            "desc_size": "text-base",
+            "text_color": "inherit",
             "button_label": "",
             "button_link": "",
             "button_style": "sf__btn-primary",
@@ -121,7 +121,7 @@
         "use_scroll_mobile": false,
         "gap_mobile": 16,
         "row_gap_mobile": 16,
-        "padding_top": 44,
+        "padding_top": 100,
         "padding_bottom": 0,
         "enable_preload_image": false,
         "custom_class": ""
@@ -130,20 +130,7 @@
     "store_locator_eT9fhi": {
       "type": "store-locator",
       "blocks": {
-        "text_qJJCMc": {
-          "type": "text",
-          "settings": {
-            "heading": "",
-            "heading_size": "h4",
-            "text": "<p>Every piece in our collection is carefully selected to meet high standards of craftsmanship, design, and durability. We work with trusted manufacturers and suppliers to ensure our jewelry offers exceptional quality, elegant finishes, and lasting beauty.</p>",
-            "text_size": "text-lg",
-            "button_label": "",
-            "button_link": "",
-            "button_style": "m-button--link",
-            "button_size": ""
-          }
-        },
-        "icon_box_XTF3dJ": {
+        "icon_box_zzPpgH": {
           "type": "icon_box",
           "settings": {
             "card_style": "horizontal",
@@ -151,9 +138,9 @@
             "image_max_width": "70px",
             "link": "",
             "hover_effect": "scaling-up",
-            "title": "Premium Craftsmanship",
-            "heading_size": "h4",
-            "description": "<p>Every piece is carefully crafted with attention to detail.</p>",
+            "title": "Soft Fabric",
+            "heading_size": "h5",
+            "description": "<p>Get complimentary ground shipping on every order.Don’t love it? Send it back, on us.</p>",
             "text_size": "text-base",
             "button_label": "",
             "button_link": "",
@@ -161,7 +148,7 @@
             "button_size": ""
           }
         },
-        "icon_box_7PnhaP": {
+        "icon_box_NMN9RU": {
           "type": "icon_box",
           "settings": {
             "card_style": "horizontal",
@@ -169,9 +156,27 @@
             "image_max_width": "70px",
             "link": "",
             "hover_effect": "scaling-up",
-            "title": "Reliable Materials",
-            "heading_size": "h4",
-            "description": "<p>Made to maintain its beauty and shine, piece after piece.</p>",
+            "title": "Lightweight",
+            "heading_size": "h5",
+            "description": "<p>Join Minimog Rewards to earn gift cards<br/>and enjoy exclusive member benefits.</p>",
+            "text_size": "text-base",
+            "button_label": "",
+            "button_link": "",
+            "button_style": "m-button--link",
+            "button_size": ""
+          }
+        },
+        "icon_box_TxxDaU": {
+          "type": "icon_box",
+          "settings": {
+            "card_style": "horizontal",
+            "image_by_url": "",
+            "image_max_width": "70px",
+            "link": "",
+            "hover_effect": "scaling-up",
+            "title": "All Day Comfort",
+            "heading_size": "h5",
+            "description": "<p>We believe getting dressed should be the<br/>easiest part of your day.</p>",
             "text_size": "text-base",
             "button_label": "",
             "button_link": "",
@@ -181,9 +186,9 @@
         }
       },
       "block_order": [
-        "text_qJJCMc",
-        "icon_box_XTF3dJ",
-        "icon_box_7PnhaP"
+        "icon_box_zzPpgH",
+        "icon_box_NMN9RU",
+        "icon_box_TxxDaU"
       ],
       "custom_css": [
         ".m-section__header {max-width: 375px; --m-section-header-spacing-bottom-mobile: 24px;}",
@@ -195,7 +200,7 @@
         "container": "container",
         "color_scheme": "",
         "container_color_scheme": "",
-        "heading": "We take pride in our Quality",
+        "heading": "We are proudly Australian.",
         "heading_size": "h2",
         "description": "",
         "image_width": "medium",
@@ -218,78 +223,122 @@
         "heading_LkgWA9": {
           "type": "heading",
           "settings": {
-            "heading": "<i>Grow Your Jewelry Business With Pearlings</i>",
+            "heading": "The world needs to move fast to make a meaningful difference in the fight against climate change.",
             "heading_size": "h3"
           }
         },
         "text_imb8FG": {
           "type": "text",
           "settings": {
-            "text": "<p>Whether you own a boutique, online store, or retail chain, our wholesale program gives you access to our exclusive collections to help your business stand out.</p>",
-            "text_size": "text-lg"
-          }
-        },
-        "button_g93yWN": {
-          "type": "button",
-          "settings": {
-            "button_label": "Register as a reseller now",
-            "button_link": "",
-            "button_style": "m-button--link",
-            "button_size": "m-button--large"
+            "text": "<p>A girl should be two things: classy and fabulous. I am convinced that there can be luxury in simplicity. I wanted to dress the woman who lives and works, not the woman in a painting. It’s hard to balance everything. It’s always challenging. My relationships with producers or photographers – these are relationships that took years. I can’t get sucked into that celebrity thing, because I think it’s just crass. My aim is to make the poor look rich and the rich look poor. Vanity is the healthiest thing in life. I believe that my clothes can give people a better image of themselves – that it can increase their feelings of confidence and happiness. You can hide so much behind theatrics, and I don’t need to do that any more. I don’t really know how to do casual clothes.</p>",
+            "text_size": "text-base"
           }
         }
       },
       "block_order": [
         "heading_LkgWA9",
-        "text_imb8FG",
-        "button_g93yWN"
+        "text_imb8FG"
       ],
       "custom_css": [
         ".m-richtext {max-width: 830px; width: 100%; margin: 0 auto;}"
       ],
       "name": "Rich text",
       "settings": {
-        "container": "container-full",
+        "container": "container",
         "color_scheme": "",
-        "content_alignment": "left",
+        "content_alignment": "center",
         "padding_top": 100,
         "padding_bottom": 0,
         "custom_class": "",
         "animations": "inherit"
       }
     },
-    "image_with_text_XyDRYQ": {
-      "type": "image-with-text",
-      "name": "Image with text",
+    "icon_box_pnPaNe": {
+      "type": "icon-box",
+      "blocks": {
+        "iconbox_LYmCC9": {
+          "type": "iconbox",
+          "settings": {
+            "card_color_scheme": "",
+            "image_by_url": "",
+            "link": "",
+            "title": "Edward Lindgren",
+            "heading_size": "h5",
+            "description": "<p>CHIEF OPERATING OFFICER</p>",
+            "text_size": "text-sm",
+            "button_label": "",
+            "button_link": "",
+            "button_style": "m-button--link",
+            "button_size": ""
+          }
+        },
+        "iconbox_t76Kej": {
+          "type": "iconbox",
+          "settings": {
+            "card_color_scheme": "",
+            "image_by_url": "",
+            "link": "",
+            "title": "Chineze Afamefuna",
+            "heading_size": "h5",
+            "description": "<p>MARKETING</p>",
+            "text_size": "text-sm",
+            "button_label": "",
+            "button_link": "",
+            "button_style": "m-button--link",
+            "button_size": ""
+          }
+        },
+        "iconbox_76Q7Wt": {
+          "type": "iconbox",
+          "settings": {
+            "card_color_scheme": "",
+            "image_by_url": "",
+            "link": "",
+            "title": "Nado Husa",
+            "heading_size": "h5",
+            "description": "<p>CO-FOUNDER</p>",
+            "text_size": "text-sm",
+            "button_label": "",
+            "button_link": "",
+            "button_style": "m-button--link",
+            "button_size": ""
+          }
+        }
+      },
+      "block_order": [
+        "iconbox_LYmCC9",
+        "iconbox_t76Kej",
+        "iconbox_76Q7Wt"
+      ],
+      "custom_css": [
+        ".m-icon-box__heading,.m-icon-box__description {font-weight: 500;}",
+        ".m-icon-box__description.m\\:text-sm {font-size: 12px;}",
+        "@media (min-width: 1024px) {.m-icon-box__content {margin-top: 30px; }}"
+      ],
+      "name": "Featured promotion",
       "settings": {
-        "heading": "",
-        "heading_size": "h3",
-        "subheading": "",
-        "container": "container-fluid",
+        "container": "container",
         "color_scheme": "",
-        "item_gap": 100,
-        "item_gap_mobile": 30,
-        "layout": "right",
-        "image_column_size": "5",
-        "image_overlap": false,
-        "show_image_reverse": false,
-        "hover_effect": false,
-        "image_animation": "none",
-        "link": "",
-        "link_2": "",
-        "second_image_offset_top": 10,
-        "sub_title": "",
-        "title": "A Word From Our Founder",
-        "text_size": "h2",
-        "text": "<p><em>\"At Pearlings Designer Collection, our vision has always been simple—bring beautiful, high-quality jewelry to customers while building lasting relationships with our retail partners. Every piece in our collection is selected with care, focusing on craftsmanship, elegance, and value. We believe jewelry should not only enhance style but also create confidence and memorable experiences. Thank you for being part of our journey, and we look forward to growing together.\"</em></p><p>— <strong>Founder, Pearlings Designer Collection</strong></p>",
-        "desc_size": "text-lg",
-        "content_alignment": "left",
-        "button_label": "",
-        "button_link": "",
-        "button_style": "m-button--link",
-        "button_size": "",
-        "padding_top": 50,
-        "padding_bottom": 50,
+        "use_color_scheme_in_container": false,
+        "heading": "Our Team",
+        "heading_size": "h2",
+        "subheading": "",
+        "description": "",
+        "header_alignment": "center",
+        "item_per_row": 3,
+        "item_gap": 30,
+        "item_gap_mobile": 10,
+        "card_style": "vertical",
+        "image_max_width": "100%",
+        "content_alignment": "start",
+        "hover_effect": "scaling-up",
+        "enable_slider": false,
+        "show_pagination": false,
+        "show_navigation": false,
+        "use_scroll_mobile": true,
+        "use_grid_column_mb": false,
+        "padding_top": 100,
+        "padding_bottom": 0,
         "custom_class": "",
         "animations": "inherit"
       }
@@ -301,6 +350,6 @@
     "custom_content_TzEwWB",
     "store_locator_eT9fhi",
     "rich_text_x7EqcG",
-    "image_with_text_XyDRYQ"
+    "icon_box_pnPaNe"
   ]
 }

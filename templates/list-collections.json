@@ -146,14 +146,18 @@
             "collection_6": ""
           }
         },
-        "tab_GJ6KW8": {
+        "tab_9X9x4j": {
           "type": "tab",
           "settings": {
             "title": "Ethnic Wear",
-            "collection_1": "",
-            "collection_2": "",
-            "collection_3": "",
-            "collection_4": "",
+            "collection_1": "choker-necklace-set",
+            "image_1": "{{ block.settings.collection_1.image }}",
+            "collection_2": "kundan-necklace-sets",
+            "image_2": "{{ block.settings.collection_2.image }}",
+            "collection_3": "necklace-earring-tika-set",
+            "image_3": "{{ block.settings.collection_3.image }}",
+            "collection_4": "long-necklace-set",
+            "image_4": "{{ block.settings.collection_4.image }}",
             "collection_5": "",
             "collection_6": ""
           }
@@ -162,10 +166,14 @@
           "type": "tab",
           "settings": {
             "title": "Other Sets",
-            "collection_1": "",
-            "collection_2": "",
-            "collection_3": "",
-            "collection_4": "",
+            "collection_1": "antique-beaded-necklace-antique-necklace-designs",
+            "image_1": "{{ block.settings.collection_1.image }}",
+            "collection_2": "antique-silver-necklace-set-antique-necklace-designs",
+            "image_2": "{{ block.settings.collection_2.image }}",
+            "collection_3": "mangal-sutra",
+            "image_3": "shopify://shop_images/261322_gemini_generated_image_wj1d0uwj1d0uwj1d-1.png",
+            "collection_4": "haldi-flower-sets",
+            "image_4": "shopify://shop_images/259098_gemini_generated_image_5let9e5let9e5let.png",
             "collection_5": "",
             "collection_6": ""
           }
@@ -173,7 +181,7 @@
       },
       "block_order": [
         "tab_mA4rcK",
-        "tab_GJ6KW8",
+        "tab_9X9x4j",
         "tab_CJBrr9"
       ],
       "name": "Collection list tabs",
@@ -193,6 +201,7 @@
         "hover_effect": "scaling-down",
         "show_product_count": true,
         "image_rounded": false,
+        "image_aspect_ratio": "1/1",
         "items_per_row": 4,
         "item_gap": 30,
         "enable_slider": false,
@@ -268,6 +277,111 @@
         "item_gap_mobile": 16,
         "padding_top": 12,
         "padding_bottom": 0,
+        "custom_class": "",
+        "animations": "inherit"
+      }
+    },
+    "collection_list_tabs_bLHcCi": {
+      "type": "collection-list-tabs",
+      "blocks": {
+        "tab_ErtpRT": {
+          "type": "tab",
+          "settings": {
+            "title": "Earrings",
+            "collection_1": "cubic-zirconia-earrings",
+            "image_1": "{{ block.settings.collection_1.image }}",
+            "collection_2": "indian-design-earrings",
+            "image_2": "{{ block.settings.collection_2.image }}",
+            "collection_3": "jhumki-earrings",
+            "image_3": "{{ block.settings.collection_3.image }}",
+            "collection_4": "antique-earrings",
+            "image_4": "{{ block.settings.collection_4.image }}",
+            "collection_5": "",
+            "collection_6": ""
+          }
+        },
+        "tab_pt8Bb6": {
+          "type": "tab",
+          "settings": {
+            "title": "Bangles",
+            "collection_1": "bridal-chuda-bangles",
+            "image_1": "{{ block.settings.collection_1.image }}",
+            "collection_2": "indian-styles-bangles",
+            "collection_3": "indian-styles-bangles",
+            "image_3": "{{ block.settings.collection_3.image }}",
+            "collection_4": "colored-chudis",
+            "image_4": "shopify://shop_images/259286_beautiful-peach-colored-metal-bangles-image.jpg",
+            "collection_5": "",
+            "collection_6": ""
+          }
+        },
+        "tab_rxhTDj": {
+          "type": "tab",
+          "settings": {
+            "title": "Head Jewelry",
+            "collection_1": "matha-patti",
+            "image_1": "{{ block.settings.collection_1.image }}",
+            "collection_2": "jhumar",
+            "image_2": "{{ block.settings.collection_2.image }}",
+            "collection_3": "tikas-head-jewellery",
+            "image_3": "{{ block.settings.collection_3.image }}",
+            "collection_4": "sheesh-patti",
+            "image_4": "{{ block.settings.collection_4.image }}",
+            "collection_5": "",
+            "collection_6": ""
+          }
+        },
+        "tab_Bxg8qy": {
+          "type": "tab",
+          "settings": {
+            "title": "Other Accessories",
+            "collection_1": "anklets",
+            "image_1": "{{ block.settings.collection_1.image }}",
+            "collection_2": "belts",
+            "image_2": "{{ block.settings.collection_2.image }}",
+            "collection_3": "bracelets",
+            "image_3": "shopify://shop_images/209356_gemini_generated_image_ljkl0bljkl0bljkl.png",
+            "collection_4": "kaleerien",
+            "image_4": "{{ block.settings.collection_4.image }}",
+            "collection_5": "",
+            "collection_6": ""
+          }
+        }
+      },
+      "block_order": [
+        "tab_ErtpRT",
+        "tab_pt8Bb6",
+        "tab_rxhTDj",
+        "tab_Bxg8qy"
+      ],
+      "name": "Collection list tabs",
+      "settings": {
+        "heading": "Assorted Jewelry",
+        "heading_size": "h3",
+        "subheading": "",
+        "description": "",
+        "header_alignment": "center",
+        "container": "container-fluid",
+        "color_scheme": "",
+        "tab_header": "horizontal",
+        "tab_heading_size": "h5",
+        "card_style": "standard",
+        "card_heading_size": "h5",
+        "text_alignment": "left",
+        "hover_effect": "scaling-down",
+        "show_product_count": true,
+        "image_rounded": false,
+        "image_aspect_ratio": "1/1",
+        "items_per_row": 4,
+        "item_gap": 30,
+        "enable_slider": false,
+        "show_navigation": true,
+        "show_pagination": false,
+        "mobile_disable_slider": false,
+        "use_scroll_mobile": true,
+        "item_gap_mobile": 16,
+        "padding_top": 50,
+        "padding_bottom": 50,
         "custom_class": "",
         "animations": "inherit"
       }
@@ -639,6 +753,7 @@
     "image_with_text_2_NwtWkt",
     "collection_list_tabs_jgmkPx",
     "product_tabs_qtNJGk",
+    "collection_list_tabs_bLHcCi",
     "collection_list_8DCrPf",
     "collection_list_AiVFMc",
     "banner_with_slider_zgGTAi",

@@ -98,6 +98,15 @@
     "theme_currencies": "USD | EUR | GBP | VND",
     "bg_cart_count": "#da3f3f",
     "content_for_index": [],
+    "blocks": {
+      "6868439170666289573": {
+        "type": "shopify://apps/foxkit-upsell-cross-sell/blocks/foxkit-theme-helper/13f41957-6b79-47c1-99a2-e52431f06fff",
+        "disabled": false,
+        "settings": {
+          "enable_ajax_atc": true
+        }
+      }
+    },
     "color_schemes": {
       "default": {
         "settings": {
@@ -229,6 +238,116 @@
           "tooltip": "#ffffff",
           "tooltip_label": "#222222",
           "border": "#dedede"
+        }
+      },
+      "scheme-light": {
+        "settings": {
+          "background": "#faf6f1",
+          "background_secondary": "#f6e7eb",
+          "background_gradient": "",
+          "text": "#2b1626",
+          "subtext": "#8a7a82",
+          "heading_text": "#6e2f61",
+          "button": "#6e2f61",
+          "button_label": "#faf6f1",
+          "outline_button_label": "#6e2f61",
+          "button_hover": "#2b1626",
+          "button_text_hover": "#faf6f1",
+          "price_sale": "#c13b5e",
+          "price_regular": "#2b1626",
+          "form_field": "#f3ecee",
+          "form_field_label": "#2b1626",
+          "tooltip": "#2b1626",
+          "tooltip_label": "#faf6f1",
+          "border": "#e8dbdf"
+        }
+      },
+      "scheme-plum": {
+        "settings": {
+          "background": "#6e2f61",
+          "background_secondary": "#5a2551",
+          "background_gradient": "",
+          "text": "#faf6f1",
+          "subtext": "#d9b6c7",
+          "heading_text": "#faf6f1",
+          "button": "#c2a24e",
+          "button_label": "#2b1626",
+          "outline_button_label": "#faf6f1",
+          "button_hover": "#d4b66a",
+          "button_text_hover": "#2b1626",
+          "price_sale": "#efa9bc",
+          "price_regular": "#faf6f1",
+          "form_field": "#5a2551",
+          "form_field_label": "#faf6f1",
+          "tooltip": "#2b1626",
+          "tooltip_label": "#faf6f1",
+          "border": "#834a78"
+        }
+      },
+      "scheme-blush": {
+        "settings": {
+          "background": "#F6E7EB",
+          "background_secondary": "#FAF6F1",
+          "background_gradient": "",
+          "text": "#2B1626",
+          "subtext": "#9C7C8A",
+          "heading_text": "#6E2F61",
+          "button": "#6E2F61",
+          "button_label": "#FAF6F1",
+          "outline_button_label": "#6E2F61",
+          "button_hover": "#2B1626",
+          "button_text_hover": "#FAF6F1",
+          "price_sale": "#C13B5E",
+          "price_regular": "#2B1626",
+          "form_field": "#FAF6F1",
+          "form_field_label": "#2B1626",
+          "tooltip": "#2B1626",
+          "tooltip_label": "#FAF6F1",
+          "border": "#E6CDD5"
+        }
+      },
+      "scheme-rose": {
+        "settings": {
+          "background": "#DD88A2",
+          "background_secondary": "#E8A8BA",
+          "background_gradient": "",
+          "text": "#2B1626",
+          "subtext": "#6E2F61",
+          "heading_text": "#2B1626",
+          "button": "#6E2F61",
+          "button_label": "#FAF6F1",
+          "outline_button_label": "#2B1626",
+          "button_hover": "#2B1626",
+          "button_text_hover": "#FAF6F1",
+          "price_sale": "#8C2A48",
+          "price_regular": "#2B1626",
+          "form_field": "#FAF6F1",
+          "form_field_label": "#2B1626",
+          "tooltip": "#2B1626",
+          "tooltip_label": "#FAF6F1",
+          "border": "#C9748D"
+        }
+      },
+      "scheme-deep": {
+        "settings": {
+          "background": "#2B1626",
+          "background_secondary": "#3D2236",
+          "background_gradient": "",
+          "text": "#FAF6F1",
+          "subtext": "#C4A7B6",
+          "heading_text": "#FAF6F1",
+          "button": "#C2A24E",
+          "button_label": "#2B1626",
+          "outline_button_label": "#DD88A2",
+          "button_hover": "#D4B66A",
+          "button_text_hover": "#2B1626",
+          "price_sale": "#EFA9BC",
+          "price_regular": "#FAF6F1",
+          "form_field": "#3D2236",
+          "form_field_label": "#FAF6F1",
+          "tooltip": "#FAF6F1",
+          "tooltip_label": "#2B1626",
+          "border": "#4A2E42"
         }
       }
     }

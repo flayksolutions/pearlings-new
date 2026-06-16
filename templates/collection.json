@@ -13,13 +13,14 @@
       "type": "collection-page-header",
       "settings": {
         "color_scheme": "",
-        "container": "container-fluid",
+        "container": "w-full",
         "layout": "inside",
-        "image_position": "top",
+        "bg_image": "shopify://shop_images/210212_gemini_generated_image_rp04rerp04rerp04_a45f41b9-b889-4720-ac63-99517a7c1eea.png",
+        "image_position": "background",
         "enable_parallax": false,
         "parallax_direction": "vertical",
         "text_alignment": "center",
-        "text_color": "inherit",
+        "text_color": "white",
         "upper_title": false,
         "show_desc": false,
         "toggle_showmore": false,
@@ -133,9 +134,9 @@
         "grid_columns": "4",
         "show_columns_switcher": true,
         "pagination_limit": 12,
-        "paginate_type": "paginate",
+        "paginate_type": "infinite",
         "show_sorting": true,
-        "show_filter": true,
+        "show_filter": false,
         "filters_type": "tags_filter",
         "sidebar": "leftColumn",
         "sidebar_title": "Filters",
@@ -147,117 +148,10 @@
         "color_swatches": "color,colour,couleur,farbe",
         "color_swatches_design": "inline"
       }
-    },
-    "16225125199f82d8fe": {
-      "type": "icon-box",
-      "blocks": {
-        "16225125199f82d8fe-0": {
-          "type": "iconbox",
-          "settings": {
-            "card_color_scheme": "",
-            "image_by_url": "",
-            "link": "",
-            "title": "Free Shipping",
-            "heading_size": "h5",
-            "description": "<p>Free Shipping for orders over £130</p>",
-            "text_size": "text-base",
-            "button_label": "",
-            "button_link": "",
-            "button_style": "sf__btn-link",
-            "button_size": ""
-          }
-        },
-        "16225125199f82d8fe-1": {
-          "type": "iconbox",
-          "settings": {
-            "card_color_scheme": "",
-            "image_by_url": "",
-            "link": "",
-            "title": "Money Guarantee",
-            "heading_size": "h5",
-            "description": "<p>Within 30 days for an exchange.</p>",
-            "text_size": "text-base",
-            "button_label": "",
-            "button_link": "",
-            "button_style": "sf__btn-link",
-            "button_size": ""
-          }
-        },
-        "16225125199f82d8fe-2": {
-          "type": "iconbox",
-          "settings": {
-            "card_color_scheme": "",
-            "image_by_url": "",
-            "link": "",
-            "title": "Online Support",
-            "heading_size": "h5",
-            "description": "<p>24 hours a day, 7 days a week</p>",
-            "text_size": "text-base",
-            "button_label": "",
-            "button_link": "",
-            "button_style": "sf__btn-link",
-            "button_size": ""
-          }
-        },
-        "71deafbb-3baf-443a-a087-3f7b8af7b9fa": {
-          "type": "iconbox",
-          "settings": {
-            "card_color_scheme": "",
-            "image_by_url": "",
-            "link": "",
-            "title": "Flexible Payment",
-            "heading_size": "h5",
-            "description": "<p>Pay with Multiple Credit Cards</p>",
-            "text_size": "text-base",
-            "button_label": "",
-            "button_link": "",
-            "button_style": "sf__btn-link",
-            "button_size": ""
-          }
-        }
-      },
-      "block_order": [
-        "16225125199f82d8fe-0",
-        "16225125199f82d8fe-1",
-        "16225125199f82d8fe-2",
-        "71deafbb-3baf-443a-a087-3f7b8af7b9fa"
-      ],
-      "custom_css": [
-        ".m-icon-box-section {border-top: 1px solid rgb(var(--color-border));}",
-        ".m-icon-box__icon {margin-right: 12px;}",
-        ".m-icon-box__heading {font-weight: 500;}"
-      ],
-      "settings": {
-        "container": "container-fluid",
-        "color_scheme": "",
-        "use_color_scheme_in_container": false,
-        "heading": "",
-        "heading_size": "h3",
-        "subheading": "",
-        "description": "",
-        "header_alignment": "center",
-        "item_per_row": 4,
-        "item_gap": 30,
-        "item_gap_mobile": 10,
-        "card_style": "horizontal",
-        "image_max_width": "60px",
-        "content_alignment": "start",
-        "hover_effect": "none",
-        "enable_slider": false,
-        "show_pagination": true,
-        "show_navigation": true,
-        "use_scroll_mobile": false,
-        "use_grid_column_mb": false,
-        "padding_top": 46,
-        "padding_bottom": 46,
-        "custom_class": "",
-        "animations": "inherit"
-      }
     }
   },
   "order": [
     "collection-header",
-    "main",
-    "16225125199f82d8fe"
+    "main"
   ]
 }

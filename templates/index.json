@@ -125,7 +125,7 @@
         "speed": 12,
         "item_gap": 40,
         "item_gap_mobile": 20,
-        "color_scheme": "dark",
+        "color_scheme": "scheme-plum",
         "padding_top": 8,
         "padding_bottom": 8,
         "custom_class": ""
@@ -158,7 +158,7 @@
       "name": "Rich text",
       "settings": {
         "container": "container",
-        "color_scheme": "",
+        "color_scheme": "scheme-light",
         "content_alignment": "center",
         "padding_top": 52,
         "padding_bottom": 52,
@@ -275,7 +275,7 @@
         "description": "",
         "header_alignment": "center",
         "container": "container-fluid",
-        "color_scheme": "",
+        "color_scheme": "scheme-light",
         "layout": "layout_1",
         "gap": 5,
         "use_scroll_mobile": false,
@@ -316,7 +316,7 @@
         "description": "",
         "header_alignment": "center",
         "container": "container-fluid",
-        "color_scheme": "",
+        "color_scheme": "scheme-light",
         "tab_header": "horizontal",
         "tab_heading_size": "h5",
         "limit": 5,
@@ -928,7 +928,7 @@
         "button_link": "",
         "button_style": "m-button--primary",
         "header_alignment": "center",
-        "color_scheme": "",
+        "color_scheme": "scheme-light",
         "container": "container-fluid",
         "layout": "grid",
         "expanded": true,
@@ -1124,7 +1124,7 @@
         "description": "",
         "header_alignment": "left",
         "container": "container-fluid",
-        "color_scheme": "footer",
+        "color_scheme": "scheme-light",
         "design": "testimonials-6",
         "show_stars": true,
         "autorotate": false,
@@ -1144,7 +1144,7 @@
         "image_yb7PAy": {
           "type": "image",
           "settings": {
-            "link": ""
+            "link": "https://www.instagram.com/reel/DSIlzKEj0nJ/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
           }
         },
         "image_E3BVEF": {
@@ -1170,6 +1170,12 @@
           "settings": {
             "link": ""
           }
+        },
+        "image_mMKzMM": {
+          "type": "image",
+          "settings": {
+            "link": ""
+          }
         }
       },
       "block_order": [
@@ -1177,7 +1183,8 @@
         "image_E3BVEF",
         "image_hUUEhL",
         "image_thHpC7",
-        "image_hnD8wM"
+        "image_hnD8wM",
+        "image_mMKzMM"
       ],
       "custom_css": [
         ".container-full {padding-inline: 0;}"
@@ -1192,17 +1199,17 @@
         "button_style": "m-button--primary",
         "header_alignment": "center",
         "container": "container-full",
-        "color_scheme": "",
-        "color_scheme_content": "",
+        "color_scheme": "scheme-light",
+        "color_scheme_content": "scheme-light",
         "icon": "none",
-        "layout": "grid",
+        "layout": "metro-left",
         "grid_columns": 5,
         "column_gap": 0,
         "row_gap": 0,
         "columns_mobile": "2",
         "mobile_gap": 10,
-        "use_scroll_mobile": true,
-        "padding_top": 100,
+        "use_scroll_mobile": false,
+        "padding_top": 30,
         "padding_bottom": 0,
         "custom_class": "",
         "animations": "inherit"
@@ -1213,6 +1220,7 @@
       "blocks": {
         "16225125199f82d8fe-0": {
           "type": "iconbox",
+          "disabled": true,
           "settings": {
             "card_color_scheme": "",
             "image_by_url": "",
@@ -1246,7 +1254,7 @@
         "16225125199f82d8fe-2": {
           "type": "iconbox",
           "settings": {
-            "card_color_scheme": "",
+            "card_color_scheme": "scheme-light",
             "image_by_url": "",
             "link": "",
             "title": "Online Support",
@@ -1262,7 +1270,7 @@
         "71deafbb-3baf-443a-a087-3f7b8af7b9fa": {
           "type": "iconbox",
           "settings": {
-            "card_color_scheme": "",
+            "card_color_scheme": "scheme-light",
             "image_by_url": "",
             "link": "",
             "title": "Flexible Payment",
@@ -1282,13 +1290,14 @@
         "16225125199f82d8fe-2",
         "71deafbb-3baf-443a-a087-3f7b8af7b9fa"
       ],
+      "disabled": true,
       "custom_css": [
         ".m-icon-box__icon {margin-right: 12px;}",
         ".m-icon-box__heading {font-weight: 500;}"
       ],
       "settings": {
-        "container": "container-fluid",
-        "color_scheme": "",
+        "container": "container",
+        "color_scheme": "scheme-plum",
         "use_color_scheme_in_container": false,
         "heading": "",
         "heading_size": "h3",
