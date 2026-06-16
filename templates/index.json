@@ -860,6 +860,74 @@
         "enable_preload_image": false
       }
     },
+    "custom_collection_coverflow_slider_P9aLWG": {
+      "type": "custom-collection-coverflow-slider",
+      "blocks": {
+        "slide_PbbghK": {
+          "type": "slide",
+          "settings": {
+            "title": "Day out",
+            "link": ""
+          }
+        },
+        "slide_gxDf8f": {
+          "type": "slide",
+          "settings": {
+            "title": "Date night",
+            "link": ""
+          }
+        },
+        "slide_NyjnWP": {
+          "type": "slide",
+          "settings": {
+            "title": "Wedding wear",
+            "link": ""
+          }
+        },
+        "slide_z9qyaw": {
+          "type": "slide",
+          "settings": {
+            "title": "Office wear",
+            "link": ""
+          }
+        },
+        "slide_74QnHL": {
+          "type": "slide",
+          "settings": {
+            "title": "Party wear",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "slide_PbbghK",
+        "slide_gxDf8f",
+        "slide_NyjnWP",
+        "slide_z9qyaw",
+        "slide_74QnHL"
+      ],
+      "name": "Category Coverflow",
+      "settings": {
+        "color_scheme": "",
+        "heading": "Shop by look",
+        "card_width": 330,
+        "card_radius": 4,
+        "space_between": 0,
+        "section_padding": 56,
+        "cf_rotate": 20,
+        "cf_depth": 120,
+        "cf_stretch": 0,
+        "cf_modifier": 1,
+        "side_dim": 50,
+        "loop": true,
+        "show_arrows": true,
+        "autoplay": false,
+        "autoplay_delay": 3500,
+        "label_size": 18,
+        "label_tracking": 2,
+        "label_color": "#ffffff"
+      }
+    },
     "collection_list_tjXYY7": {
       "type": "collection-list",
       "blocks": {
@@ -1338,6 +1406,7 @@
     "custom_content_btgYN3",
     "custom_content_hh6hmV",
     "image_with_text_2_GMjzRx",
+    "custom_collection_coverflow_slider_P9aLWG",
     "collection_list_tjXYY7",
     "custom_content_KiFzqG",
     "testimonials_pnyUnX",
