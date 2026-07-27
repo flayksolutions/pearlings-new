@@ -1,0 +1,73 @@
+{%- comment -%}
+  Renders a single info card, reusing the same markup/classes as
+  sections/multiple-image-with-text.liquid so it inherits identical styling
+  from multiple-iwt.css. Only the image/text arrangement changes.
+
+  Accepts:
+  - block: {Object} section block (type: info_card)
+  - layout: {String} 'horizontal' (image beside text) or 'vertical' (image above text)
+  - section_color_scheme: {String} section.settings.color_scheme, used to detect inherited scheme
+  - animated: {Boolean}
+  - animation_effect: {String}
+{%- endcomment -%}
+{% liquid
+  assign color_scheme_inherit = false
+  if block.settings.color_scheme == section_color_scheme
+    assign color_scheme_inherit = true
+  endif
+
+  assign image_height = block.settings.image_height | default: 'large'
+  assign image_height_class = ''
+  unless image_height == 'large'
+    assign image_height_class = 'm-info-card__image--' | append: image_height
+  endunless
+
+  assign heading_size = block.settings.text_size | replace: 'small', 'h3' | replace: 'medium', 'h2' | replace: 'large', 'h1'
+
+  assign layout_class = 'm-iwt--image-left'
+  assign grid_class = 'm:grid-1-cols md:m:grid-2-cols'
+  if layout == 'vertical'
+    assign layout_class = 'm-iwt--image-top'
+    assign grid_class = 'm:grid-1-cols'
+  endif
+%}
+<div class="m-iwt {{ layout_class }}{% if color_scheme_inherit %} color-scheme-inherit{% endif %} m:column" {{ block.shopify_attributes }}>
+  <div class="m-iwt__wrapper m:display-grid {{ grid_class }}{% unless color_scheme_inherit %} m:blocks-radius{% endunless %} m-gradient m-color-{{ block.settings.color_scheme }}{% if animated %} m-scroll-trigger animate--{{ animation_effect }}{% endif %}">
+    <div class="m-iwt__image {{ image_height_class }} m-hover-box m-hover-box--scale-up{% if color_scheme_inherit %} m:blocks-radius{% endif %}">
+      {% if block.settings.image != blank %}
+        {% render 'responsive-image', image: block.settings.image, image_class: 'm:w-full m:h-full m:object-cover' %}
+      {% else %}
+        {{ 'image' | placeholder_svg_tag: 'm-placeholder-svg m:w-full m:h-full m:object-cover' }}
+      {% endif %}
+    </div>
+    <div class="m-iwt__content m:display-flex m:items-center">
+      <div class="m-iwt__content-inner m-richtext m-richtext--large m:text-{{ block.settings.text_alignment }}">
+        {% if block.settings.sub_title != blank %}
+          <p class="m-richtext__subtitle h6">
+            {{ block.settings.sub_title }}
+          </p>
+        {% endif %}
+        {% if block.settings.title != blank %}
+          <h3 class="m-richtext__title {{ heading_size }}">
+            {{ block.settings.title }}
+          </h3>
+        {% endif %}
+        {% if block.settings.text != blank %}
+          <div class="m-richtext__description rte {{ block.settings.desc_size | prepend: 'm:' }}">
+            {{ block.settings.text }}
+          </div>
+        {% endif %}
+        {% if block.settings.button_label != blank %}
+          <div class="m-richtext__button">
+            <a
+              href="{{ block.settings.button_link | default: "#" }}"
+              class="m-button {{ block.settings.button_style }} {{ block.settings.button_size }}"
+            >
+              {{- block.settings.button_label -}}
+            </a>
+          </div>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</div>

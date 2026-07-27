@@ -385,11 +385,11 @@
         "custom_class": ""
       }
     },
-    "multiple_image_with_text_9qDmdr": {
-      "type": "multiple-image-with-text",
+    "custom_info_cards_9qDmdr": {
+      "type": "custom-info-cards",
       "blocks": {
-        "image_with_text_KNYb9d": {
-          "type": "image_with_text",
+        "info_card_KNYb9d": {
+          "type": "info_card",
           "settings": {
             "color_scheme": "scheme-blush",
             "sub_title": "— 01 —",
@@ -404,8 +404,8 @@
             "button_size": "m-button--large"
           }
         },
-        "image_with_text_Vhc73c": {
-          "type": "image_with_text",
+        "info_card_Vhc73c": {
+          "type": "info_card",
           "settings": {
             "color_scheme": "scheme-blush",
             "sub_title": "— 02 —",
@@ -422,15 +422,15 @@
         }
       },
       "block_order": [
-        "image_with_text_KNYb9d",
-        "image_with_text_Vhc73c"
+        "info_card_KNYb9d",
+        "info_card_Vhc73c"
       ],
       "custom_css": [
         ".m-iwt {border: 1px solid #6e2f611a; border-radius: 2px;}",
         ".m-iwt__wrapper {border-radius: 2px;}",
         ".m-richtext__subtitle {font-size: 12px; letter-spacing: 4px; color: #c2a24e; font-weight: 500;}"
       ],
-      "name": "Multiple image with text",
+      "name": "Info cards",
       "settings": {
         "heading": "",
         "heading_size": "h3",
@@ -438,12 +438,11 @@
         "header_alignment": "center",
         "container": "container",
         "color_scheme": "scheme-light",
-        "column_gap": 100,
+        "layout": "vertical",
+        "columns": 2,
+        "columns_mobile": "1",
+        "column_gap": 20,
         "column_gap_mobile": 16,
-        "show_pagination": false,
-        "show_navigation": false,
-        "autorotate": false,
-        "autorotate_speed": 5,
         "padding_top": 0,
         "padding_bottom": 100,
         "custom_class": "",
@@ -552,7 +551,7 @@
     "custom_content_TzEwWB",
     "store_locator_eT9fhi",
     "custom_content_mUyPUw",
-    "multiple_image_with_text_9qDmdr",
+    "custom_info_cards_9qDmdr",
     "rich_text_cxT76R",
     "image_with_text_XyDRYQ"
   ]

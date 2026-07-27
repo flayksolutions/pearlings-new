@@ -1,0 +1,26 @@
+.m-info-cards__grid.m\:display-grid {
+  gap: var(--column-gap-mobile);
+}
+
+@media screen and (min-width: 1024px) {
+  .m-info-cards__grid.m\:display-grid {
+    gap: var(--column-gap);
+  }
+}
+
+.m-info-cards__grid > .m-iwt.m\:column {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.m-iwt--image-top.color-scheme-inherit .m-iwt__content {
+  padding-top: 24px;
+}
+
+.m-info-card__image--small {
+  aspect-ratio: 16 / 9;
+}
+
+.m-info-card__image--medium {
+  aspect-ratio: 4 / 3;
+}
