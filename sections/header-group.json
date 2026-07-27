@@ -42,7 +42,8 @@
         "item_RHJEnp"
       ],
       "custom_css": [
-        ".m-announcement-bar__container {--container-width: 600px;}"
+        ".m-announcement-bar__container {--container-width: 600px;}",
+        "path {stroke: #ffffff;}"
       ],
       "settings": {
         "container": "container",
@@ -52,13 +53,36 @@
         "show_close": true,
         "show_divider": false,
         "show_nav": true,
-        "autorotate": false,
+        "autorotate": true,
         "autorotate_speed": 3
       }
     },
     "header": {
       "type": "header",
       "blocks": {
+        "product_list_MREggx": {
+          "type": "product-list",
+          "settings": {
+            "heading": "Shop By Style",
+            "container": "inherit",
+            "stretch_width": true,
+            "collection": "choker-necklace-set",
+            "limit": 12,
+            "columns": 3
+          }
+        },
+        "banner_4rEL4g": {
+          "type": "banner",
+          "settings": {
+            "heading": "Shop By Collection",
+            "container": "inherit",
+            "banner_style": "outside",
+            "banner_link": "shopify://collections",
+            "banner_title": "Complete Catalog",
+            "banner_desc": "",
+            "banner_button_text": "Explore"
+          }
+        },
         "collection_list_tWVycB": {
           "type": "collection-list",
           "disabled": true,
@@ -77,6 +101,8 @@
         }
       },
       "block_order": [
+        "product_list_MREggx",
+        "banner_4rEL4g",
         "collection_list_tWVycB"
       ],
       "settings": {
@@ -96,9 +122,9 @@
         "logo_max_width": 180,
         "sticky_logo_max_width": 145,
         "mobile_logo_max_width": 165,
-        "main_menu": "main-menu",
+        "main_menu": "main-menu-desktop-copy",
         "secondary_menu": "",
-        "mobile_menu": "main-menu-copy",
+        "mobile_menu": "main-menu-desktop-copy",
         "uppercase_parent_level": false,
         "show_menu_column_divider": true,
         "search": "show_icon",

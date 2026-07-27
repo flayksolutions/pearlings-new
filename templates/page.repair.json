@@ -1,0 +1,268 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "page",
+      "disabled": true,
+      "settings": {}
+    },
+    "rich_text_fErtMB": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_rFwcEa": {
+          "type": "heading",
+          "settings": {
+            "heading": "Repair Guide",
+            "heading_size": "h2"
+          }
+        },
+        "text_MFVXJi": {
+          "type": "text",
+          "settings": {
+            "text": "<p>From simple fixes to intricate restorations, every repair is completed by our expert in-house craftsmen<br/>with precision, care, and uncompromising quality.</p>",
+            "text_size": "text-lg"
+          }
+        },
+        "button_F4CDAL": {
+          "type": "button",
+          "settings": {
+            "button_label": "Contact Us Today",
+            "button_link": "shopify://pages/contact",
+            "button_style": "m-button--link",
+            "button_size": ""
+          }
+        }
+      },
+      "block_order": [
+        "heading_rFwcEa",
+        "text_MFVXJi",
+        "button_F4CDAL"
+      ],
+      "name": "Rich text",
+      "settings": {
+        "container": "container",
+        "color_scheme": "scheme-light",
+        "content_alignment": "center",
+        "padding_top": 52,
+        "padding_bottom": 52,
+        "custom_class": "",
+        "animations": "inherit"
+      }
+    },
+    "page_faqs_7f3RNG": {
+      "type": "page-faqs",
+      "blocks": {
+        "content_EJjndM": {
+          "type": "content",
+          "disabled": true,
+          "settings": {
+            "content": "All questions regarding jewellery and accessories repair answered below."
+          }
+        },
+        "accordion_tLY7iW": {
+          "type": "accordion",
+          "settings": {
+            "title": "What types of jewellery do you repair?",
+            "content": "<p>We repair a wide range of jewellery, including rings, necklaces, bracelets, earrings, bangles, pendants, and more. Our services cover gold, silver, platinum, and diamond jewellery, along with gemstone pieces. Whether it's a broken chain, loose stone, damaged clasp, or worn setting, our skilled craftsmen can restore your jewellery with precision.</p>",
+            "open": false
+          }
+        },
+        "accordion_H8N6Fm": {
+          "type": "accordion",
+          "settings": {
+            "title": "How long does a jewellery repair take?",
+            "content": "<p>Repair times vary depending on the complexity of the work. Minor repairs such as chain soldering or clasp replacement are usually completed within 2–5 business days, while more intricate repairs, stone setting, or restoration projects may take 1–3 weeks. We'll provide an estimated timeline after assessing your jewellery.</p>",
+            "open": false
+          }
+        },
+        "accordion_aWeNr7": {
+          "type": "accordion",
+          "settings": {
+            "title": "Can you resize rings?",
+            "content": "<p>Yes. We offer professional ring resizing for most gold, silver, and platinum rings. Whether you need your ring made larger or smaller, our jewellers ensure a comfortable fit while maintaining the design and structural integrity of the piece.</p>",
+            "open": false
+          }
+        },
+        "accordion_L6amic": {
+          "type": "accordion",
+          "settings": {
+            "title": "Will my jewellery look the same after repair?",
+            "content": "<p>Our goal is to restore your jewellery as closely as possible to its original condition. We use high-quality materials and expert craftsmanship to ensure repairs are discreet, durable, and maintain the beauty of your jewellery.</p>",
+            "open": false
+          }
+        },
+        "accordion_HQiRrU": {
+          "type": "accordion",
+          "settings": {
+            "title": "Do you repair jewellery purchased from other stores?",
+            "content": "<p>Absolutely. We repair jewellery regardless of where it was purchased. Whether it's an heirloom, a sentimental piece, or jewellery from another retailer, our team will assess it and recommend the best repair solution.</p><h3></h3>",
+            "open": false
+          }
+        },
+        "accordion_pdBmWk": {
+          "type": "accordion",
+          "settings": {
+            "title": "How much does jewellery repair cost?",
+            "content": "<p>Repair costs depend on the type of jewellery, the materials involved, and the complexity of the repair. After inspecting your jewellery, we'll provide a transparent quotation before any work begins. There are no hidden charges, and repairs only proceed with your approval.</p>",
+            "open": false
+          }
+        }
+      },
+      "block_order": [
+        "content_EJjndM",
+        "accordion_tLY7iW",
+        "accordion_H8N6Fm",
+        "accordion_aWeNr7",
+        "accordion_L6amic",
+        "accordion_HQiRrU",
+        "accordion_pdBmWk"
+      ],
+      "name": "FAQs",
+      "settings": {
+        "container": "container",
+        "color_scheme": "scheme-light",
+        "menu": "",
+        "custom_class": ""
+      }
+    },
+    "image_comparison_3iDCJA": {
+      "type": "image-comparison",
+      "blocks": {
+        "image_t7wQeh": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/repairbefore.png",
+            "heading": "Before"
+          }
+        },
+        "image_EpdiAB": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/repairafter.png",
+            "heading": "After"
+          }
+        }
+      },
+      "block_order": [
+        "image_t7wQeh",
+        "image_EpdiAB"
+      ],
+      "name": "Before/after image slider",
+      "settings": {
+        "container": "container",
+        "color_scheme": "scheme-light",
+        "heading": "",
+        "heading_size": "h3",
+        "subheading": "",
+        "description": "",
+        "header_alignment": "center",
+        "layout": "horizontal",
+        "image_height": "adapt",
+        "padding_top": 50,
+        "padding_bottom": 50,
+        "custom_class": "",
+        "enable_preload_image": false
+      }
+    },
+    "icon_box_zPFinW": {
+      "type": "icon-box",
+      "blocks": {
+        "iconbox_RkHCmA": {
+          "type": "iconbox",
+          "settings": {
+            "card_color_scheme": "scheme-blush",
+            "image_by_url": "",
+            "link": "",
+            "title": "Call our customer service",
+            "heading_size": "h4",
+            "description": "<p>+91 7785847395</p>",
+            "text_size": "text-base",
+            "button_label": "",
+            "button_link": "",
+            "button_style": "m-button--link",
+            "button_size": ""
+          }
+        },
+        "iconbox_rpqKT3": {
+          "type": "iconbox",
+          "settings": {
+            "card_color_scheme": "scheme-blush",
+            "image_by_url": "",
+            "link": "",
+            "title": "Visit our physical store",
+            "heading_size": "h4",
+            "description": "<p>6638 Southwest Fwy, Houston,<br/>TX 77074, United States</p>",
+            "text_size": "text-base",
+            "button_label": "",
+            "button_link": "",
+            "button_style": "m-button--link",
+            "button_size": ""
+          }
+        },
+        "iconbox_mgz9mE": {
+          "type": "iconbox",
+          "settings": {
+            "card_color_scheme": "scheme-blush",
+            "image_by_url": "",
+            "link": "",
+            "title": "Drop us an email",
+            "heading_size": "h4",
+            "description": "<p>exampleemail@gmail.com</p>",
+            "text_size": "text-base",
+            "button_label": "",
+            "button_link": "",
+            "button_style": "m-button--link",
+            "button_size": ""
+          }
+        }
+      },
+      "block_order": [
+        "iconbox_RkHCmA",
+        "iconbox_rpqKT3",
+        "iconbox_mgz9mE"
+      ],
+      "name": "Featured promotion",
+      "settings": {
+        "container": "container",
+        "color_scheme": "scheme-blush",
+        "use_color_scheme_in_container": false,
+        "heading": "Ways to get in touch with Pearlings",
+        "heading_size": "h3",
+        "subheading": "",
+        "description": "",
+        "header_alignment": "center",
+        "item_per_row": 3,
+        "item_gap": 30,
+        "item_gap_mobile": 10,
+        "card_style": "vertical",
+        "image_max_width": "70px",
+        "content_alignment": "center",
+        "hover_effect": "scaling-up",
+        "enable_slider": false,
+        "show_pagination": false,
+        "show_navigation": false,
+        "use_scroll_mobile": false,
+        "use_grid_column_mb": false,
+        "padding_top": 100,
+        "padding_bottom": 50,
+        "custom_class": "",
+        "animations": "inherit"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "rich_text_fErtMB",
+    "page_faqs_7f3RNG",
+    "image_comparison_3iDCJA",
+    "icon_box_zPFinW"
+  ]
+}

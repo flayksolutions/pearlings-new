@@ -24,6 +24,7 @@
       "blocks": {
         "82bf3536-b907-4493-a46e-1f1065a016b1": {
           "type": "text",
+          "disabled": true,
           "settings": {
             "text": "{{ product.vendor }}",
             "text_style": "uppercase"
@@ -49,7 +50,7 @@
             "live_views_text": "{count_number} people are viewing this right now",
             "live_views_range": "20-30",
             "live_view_duration": "10",
-            "live_view_icon_blinks": true
+            "live_view_icon_blinks": false
           }
         },
         "variant_picker": {
@@ -70,8 +71,8 @@
         "addons": {
           "type": "addons",
           "settings": {
-            "show_atcp": true,
-            "show_ask_a_question": true,
+            "show_atcp": false,
+            "show_ask_a_question": false,
             "show_social": true
           }
         },
@@ -83,7 +84,7 @@
             "deliver_days": "7",
             "date_format": "%b %d",
             "show_shipping_text": true,
-            "shipping_heading": "Free Shipping & Returns:",
+            "shipping_heading": "Free Shipping:",
             "shipping_text": "<p> On all orders over $75</p>"
           }
         },
@@ -139,7 +140,7 @@
           "type": "tab",
           "settings": {
             "header": "Shipping & Return",
-            "content": "<p>Shipping cost is based on weight. Just add products to your cart and use the Shipping Calculator to see the shipping price.</p><p>We want you to be 100% satisfied with your purchase. Items can be returned or exchanged within 30 days of delivery.</p>",
+            "content": "<p>While all sales are final and we do not accept returns or exchanges, your happiness is our ultimate goal. If you experience any issues with your order, please don't hesitate to contact us. We are fully committed to finding a solution that ensures you are satisfied with your purchase.</p>",
             "content_page": ""
           }
         }
@@ -160,6 +161,7 @@
     },
     "1633319578bb14859d": {
       "type": "image-with-text",
+      "disabled": true,
       "settings": {
         "heading": "",
         "heading_size": "h3",
@@ -190,6 +192,94 @@
         "padding_top": 0,
         "padding_bottom": 0,
         "custom_class": "",
+        "animations": "inherit"
+      }
+    },
+    "product-features": {
+      "type": "icon-box",
+      "blocks": {
+        "d81fff7a-3f85-4706-ad65-adc28ba8f29f": {
+          "type": "iconbox",
+          "settings": {
+            "card_color_scheme": "",
+            "image": "shopify://shop_images/icons8-free-shipping-80.png",
+            "image_by_url": "",
+            "link": "",
+            "title": "Free Standard Shipping",
+            "heading_size": "h4",
+            "description": "<p>Enjoy complimentary standard shipping on every order above $50, delivered straight to your doorstep.</p>",
+            "text_size": "text-base",
+            "button_label": "",
+            "button_link": "",
+            "button_style": "sf__btn-link",
+            "button_size": ""
+          }
+        },
+        "36c87b76-d4d5-45e4-8807-64a6905160a5": {
+          "type": "iconbox",
+          "settings": {
+            "card_color_scheme": "",
+            "image_by_url": "",
+            "link": "",
+            "title": "Quality Assurance",
+            "heading_size": "h4",
+            "description": "<p>We Don't compromise on quality, so you can place orders with complete trust</p>",
+            "text_size": "text-base",
+            "button_label": "",
+            "button_link": "",
+            "button_style": "sf__btn-link",
+            "button_size": ""
+          }
+        },
+        "ac627247-b97c-4ad0-a893-5a951140e490": {
+          "type": "iconbox",
+          "settings": {
+            "card_color_scheme": "",
+            "image_by_url": "",
+            "link": "",
+            "title": "Loved by Customers",
+            "heading_size": "h4",
+            "description": "<p>A growing community of 5,000+ customers who wear our jewellery with confidence</p>",
+            "text_size": "text-base",
+            "button_label": "",
+            "button_link": "",
+            "button_style": "sf__btn-link",
+            "button_size": ""
+          }
+        }
+      },
+      "block_order": [
+        "d81fff7a-3f85-4706-ad65-adc28ba8f29f",
+        "36c87b76-d4d5-45e4-8807-64a6905160a5",
+        "ac627247-b97c-4ad0-a893-5a951140e490"
+      ],
+      "custom_css": [
+        ".m-icon-box__heading {font-weight: 500;}"
+      ],
+      "settings": {
+        "container": "container",
+        "color_scheme": "",
+        "use_color_scheme_in_container": false,
+        "heading": "",
+        "heading_size": "h2",
+        "subheading": "",
+        "description": "",
+        "header_alignment": "center",
+        "item_per_row": 3,
+        "item_gap": 30,
+        "item_gap_mobile": 10,
+        "card_style": "vertical",
+        "image_max_width": "76px",
+        "content_alignment": "center",
+        "hover_effect": "none",
+        "enable_slider": false,
+        "show_pagination": false,
+        "show_navigation": false,
+        "use_scroll_mobile": true,
+        "use_grid_column_mb": false,
+        "padding_top": 40,
+        "padding_bottom": 40,
+        "custom_class": "md:m:hide-br",
         "animations": "inherit"
       }
     },
@@ -241,93 +331,6 @@
         "custom_class": "",
         "animations": "inherit"
       }
-    },
-    "product-features": {
-      "type": "icon-box",
-      "blocks": {
-        "d81fff7a-3f85-4706-ad65-adc28ba8f29f": {
-          "type": "iconbox",
-          "settings": {
-            "card_color_scheme": "",
-            "image_by_url": "",
-            "link": "",
-            "title": "Free Shipping",
-            "heading_size": "h4",
-            "description": "<p>Get complimentary ground shipping on every <br/>order. Don’t love it? Send it back, on us.</p>",
-            "text_size": "text-base",
-            "button_label": "Learn More [arrow]",
-            "button_link": "",
-            "button_style": "sf__btn-link",
-            "button_size": ""
-          }
-        },
-        "36c87b76-d4d5-45e4-8807-64a6905160a5": {
-          "type": "iconbox",
-          "settings": {
-            "card_color_scheme": "",
-            "image_by_url": "",
-            "link": "",
-            "title": "Earn Points",
-            "heading_size": "h4",
-            "description": "<p>Join Minimog Rewards to earn gift cards <br/>and enjoy exclusive member benefits.</p>",
-            "text_size": "text-base",
-            "button_label": "Contact Us [arrow]",
-            "button_link": "",
-            "button_style": "sf__btn-link",
-            "button_size": ""
-          }
-        },
-        "ac627247-b97c-4ad0-a893-5a951140e490": {
-          "type": "iconbox",
-          "settings": {
-            "card_color_scheme": "",
-            "image_by_url": "",
-            "link": "",
-            "title": "Money Back Guarantee",
-            "heading_size": "h4",
-            "description": "<p>We believe getting dressed should be the <br/>easiest part of your day.</p>",
-            "text_size": "text-base",
-            "button_label": "Learn More [arrow]",
-            "button_link": "",
-            "button_style": "sf__btn-link",
-            "button_size": ""
-          }
-        }
-      },
-      "block_order": [
-        "d81fff7a-3f85-4706-ad65-adc28ba8f29f",
-        "36c87b76-d4d5-45e4-8807-64a6905160a5",
-        "ac627247-b97c-4ad0-a893-5a951140e490"
-      ],
-      "custom_css": [
-        ".m-icon-box__heading {font-weight: 500;}"
-      ],
-      "settings": {
-        "container": "container",
-        "color_scheme": "",
-        "use_color_scheme_in_container": false,
-        "heading": "Why Minimog?",
-        "heading_size": "h2",
-        "subheading": "",
-        "description": "",
-        "header_alignment": "center",
-        "item_per_row": 3,
-        "item_gap": 30,
-        "item_gap_mobile": 10,
-        "card_style": "vertical",
-        "image_max_width": "76px",
-        "content_alignment": "center",
-        "hover_effect": "none",
-        "enable_slider": false,
-        "show_pagination": false,
-        "show_navigation": false,
-        "use_scroll_mobile": true,
-        "use_grid_column_mb": false,
-        "padding_top": 100,
-        "padding_bottom": 40,
-        "custom_class": "md:m:hide-br",
-        "animations": "inherit"
-      }
     }
   },
   "order": [
@@ -335,8 +338,8 @@
     "main",
     "product-details-tabs",
     "1633319578bb14859d",
+    "product-features",
     "product-recommendations",
-    "recent-viewed-products",
-    "product-features"
+    "recent-viewed-products"
   ]
 }

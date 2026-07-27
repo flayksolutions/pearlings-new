@@ -7,7 +7,7 @@
  * made to this file may be overwritten.
  * ------------------------------------------------------------
  */
- {
+{
   "sections": {
     "main": {
       "type": "article",
@@ -16,7 +16,7 @@
           "type": "categories",
           "settings": {
             "title": "Categories",
-            "list_blog": "collections"
+            "list_blog": ""
           }
         },
         "bb3e6ad7-c917-47d9-9bce-5edf5ff286f6": {
@@ -48,9 +48,10 @@
       ],
       "settings": {
         "container": "container",
-        "sidebar_show": true,
+        "sidebar_show": false,
         "sidebar_position": "right_column",
         "design": "layout1",
+        "blog_show_breadcrumb": false,
         "blog_show_author": true,
         "blog_show_date": true,
         "blog_show_tags": true,

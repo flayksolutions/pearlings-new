@@ -14,44 +14,84 @@
       "disabled": true,
       "settings": {}
     },
-    "custom-content": {
-      "type": "custom-content",
+    "image_with_text_2_NAUj7h": {
+      "type": "image-with-text-2",
+      "custom_css": [
+        ".m-hero__subtitle.h6 {font-size: 12px; letter-spacing: 4px; color: #dd88a2;}"
+      ],
+      "name": "Image with text overlay",
+      "settings": {
+        "color_scheme": "default",
+        "container": "w-full",
+        "hero_size": "large",
+        "show_overlay": false,
+        "image": "shopify://shop_images/About_Us_BG.png",
+        "image_link": "",
+        "parallax": false,
+        "parallax_direction": "vertical",
+        "content_in_container": false,
+        "content_position": "left middle",
+        "text_alignment": "left",
+        "text_color": "white",
+        "title": "<p style=\"color:#C2A24E;\">The Story of <i style=\"color:#C2A24E;\">Pearlings</i> </p>",
+        "text_size": "h2",
+        "subtitle": "EST. WITH LOVE . DESIGNER COLLECTION",
+        "text": "<p>Jewellery created to mark special moments and become everyday favourites.</p>",
+        "desc_size": "text-base",
+        "button_label": "",
+        "button_link": "",
+        "button_style": "m-button--primary",
+        "button_size": "",
+        "text_alignment_mobile": "left",
+        "use_content_above": true,
+        "custom_class": "",
+        "animations": "inherit",
+        "enable_bg_zoom_effect": true,
+        "enable_preload_image": false
+      }
+    },
+    "rich_text_Qxrmc4": {
+      "type": "rich-text",
       "blocks": {
-        "be5d2488-3c71-471f-bb75-dbccb6970cb0": {
-          "type": "image",
+        "subheading_p7aVzC": {
+          "type": "subheading",
           "settings": {
-            "width": "100%",
-            "alignment": "center",
-            "link": "",
-            "block_custom_class": "",
-            "animations": "inherit",
-            "enable_preload_image": false
+            "subheading": "ABOUT PEARLINGS"
+          }
+        },
+        "heading_yFJMrG": {
+          "type": "heading",
+          "settings": {
+            "heading": "Born from a simple vision. Beautiful, high-quality<br> jewellery for <i style=\"color:#DD88A2;\">everyone who cherish it.</i>",
+            "heading_size": "h2"
+          }
+        },
+        "text_wzTDhz": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "<p>Pearlings was created for girls, brides, and everyone in between no matter where they are in the<br/>world. Every piece is thoughtfully curated to bring beauty and confidence to every occasion.</p>",
+            "text_size": "text-base"
           }
         }
       },
       "block_order": [
-        "be5d2488-3c71-471f-bb75-dbccb6970cb0"
+        "subheading_p7aVzC",
+        "heading_yFJMrG",
+        "text_wzTDhz"
       ],
+      "custom_css": [
+        ".m-richtext__subtitle {font-size: 12px; letter-spacing: 4px; color: #c2a24e; font-weight: 500;}"
+      ],
+      "name": "Rich text",
       "settings": {
-        "heading": "",
-        "heading_size": "h3",
-        "subheading": "",
-        "description": "",
-        "header_alignment": "center",
         "container": "container",
-        "color_scheme": "",
-        "content_color_scheme": "",
-        "enable_parallax": false,
-        "parallax_direction": "vertical",
-        "gap": 30,
-        "row_gap": 30,
-        "use_scroll_mobile": false,
-        "gap_mobile": 16,
-        "row_gap_mobile": 16,
-        "padding_top": 0,
-        "padding_bottom": 0,
-        "enable_preload_image": false,
-        "custom_class": ""
+        "color_scheme": "scheme-light",
+        "content_alignment": "center",
+        "padding_top": 100,
+        "padding_bottom": 100,
+        "custom_class": "",
+        "animations": "inherit"
       }
     },
     "custom_content_TzEwWB": {
@@ -102,6 +142,7 @@
         "text_hTUrJW",
         "text_rLpbzX"
       ],
+      "disabled": true,
       "custom_css": [
         ".m-custom-content__block-inner {max-width: 830px; width: 100%; margin: 0 auto;}"
       ],
@@ -193,8 +234,8 @@
       "name": "Store locator",
       "settings": {
         "container": "container",
-        "color_scheme": "",
-        "container_color_scheme": "",
+        "color_scheme": "scheme-blush",
+        "container_color_scheme": "scheme-blush",
         "heading": "We take pride in our Quality",
         "heading_size": "h2",
         "description": "",
@@ -207,66 +248,275 @@
         "item_column_gap_mobile": 20,
         "item_row_gap_mobile": 30,
         "padding_top": 100,
-        "padding_bottom": 0,
+        "padding_bottom": 100,
         "custom_class": "",
         "animations": "inherit"
       }
     },
-    "rich_text_x7EqcG": {
-      "type": "rich-text",
+    "custom_content_mUyPUw": {
+      "type": "custom-content",
       "blocks": {
-        "heading_LkgWA9": {
-          "type": "heading",
+        "icon_box_h3fGKp": {
+          "type": "icon_box",
+          "disabled": true,
           "settings": {
-            "heading": "<i>Grow Your Jewelry Business With Pearlings</i>",
-            "heading_size": "h3"
-          }
-        },
-        "text_imb8FG": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Whether you own a boutique, online store, or retail chain, our wholesale program gives you access to our exclusive collections to help your business stand out.</p>",
-            "text_size": "text-lg"
-          }
-        },
-        "button_g93yWN": {
-          "type": "button",
-          "settings": {
-            "button_label": "Register as a reseller now",
+            "width": "33%",
+            "alignment": "center",
+            "card_color_scheme": "scheme-blush",
+            "card_style": "vertical",
+            "image_by_url": "",
+            "image_max_width": "70px",
+            "link": "",
+            "hover_effect": "scaling-up",
+            "content_alignment": "center",
+            "title": "Thoughtfully Curated",
+            "heading_size": "h4",
+            "description": "<p>Each design is hand-picked for its character, from<br/>heirloom-inspired polki to contemporary CZ.</p>",
+            "text_size": "text-sm",
+            "button_label": "",
             "button_link": "",
             "button_style": "m-button--link",
+            "button_size": "",
+            "block_custom_class": "",
+            "animations": "inherit"
+          }
+        },
+        "icon_box_e7jeUb": {
+          "type": "icon_box",
+          "disabled": true,
+          "settings": {
+            "width": "33%",
+            "alignment": "center",
+            "card_color_scheme": "scheme-blush",
+            "card_style": "vertical",
+            "image_by_url": "",
+            "image_max_width": "70px",
+            "link": "",
+            "hover_effect": "scaling-up",
+            "content_alignment": "center",
+            "title": "Made for Moments",
+            "heading_size": "h4",
+            "description": "<p>Pieces designed to shine on the biggest days and<br/>feel effortless on all the ordinary ones.</p>",
+            "text_size": "text-sm",
+            "button_label": "",
+            "button_link": "",
+            "button_style": "m-button--link",
+            "button_size": "",
+            "block_custom_class": "",
+            "animations": "inherit"
+          }
+        },
+        "icon_box_DtQYdg": {
+          "type": "icon_box",
+          "disabled": true,
+          "settings": {
+            "width": "33%",
+            "alignment": "center",
+            "card_color_scheme": "scheme-blush",
+            "card_style": "vertical",
+            "image_by_url": "",
+            "image_max_width": "70px",
+            "link": "",
+            "hover_effect": "scaling-up",
+            "content_alignment": "center",
+            "title": "Lasting Relationships",
+            "heading_size": "h4",
+            "description": "<p>We grow with our customers and retail partners, one<br/>beautiful piece at a time.</p>",
+            "text_size": "text-sm",
+            "button_label": "",
+            "button_link": "",
+            "button_style": "m-button--link",
+            "button_size": "",
+            "block_custom_class": "",
+            "animations": "inherit"
+          }
+        },
+        "text_Fe6bqg": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "width": "100%",
+            "alignment": "center",
+            "align_text": "center",
+            "title": "Talk about your brand",
+            "text_size": "h2",
+            "subheading": "",
+            "text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.</p>",
+            "desc_size": "text-base",
+            "text_color": "inherit",
+            "button_label": "",
+            "button_link": "",
+            "button_style": "m-button--primary",
+            "button_size": "",
+            "block_custom_class": "",
+            "animations": "inherit"
+          }
+        }
+      },
+      "block_order": [
+        "icon_box_h3fGKp",
+        "icon_box_e7jeUb",
+        "icon_box_DtQYdg",
+        "text_Fe6bqg"
+      ],
+      "custom_css": [
+        ".m-section__subheading {font-size: 12px; letter-spacing: 4px; color: #c2a24e; font-weight: 500;}"
+      ],
+      "name": "Custom content",
+      "settings": {
+        "heading": "What Else We Do",
+        "heading_size": "h2",
+        "subheading": "BEYOND THE COUNTER",
+        "description": "Alongside our retail collection, Pearlings supports two more sides of the business <br> one for the trade, one for the pieces you already treasure.",
+        "header_alignment": "center",
+        "container": "container-fluid",
+        "color_scheme": "scheme-light",
+        "content_color_scheme": "scheme-light",
+        "enable_parallax": false,
+        "parallax_direction": "vertical",
+        "gap": 30,
+        "row_gap": 30,
+        "use_scroll_mobile": false,
+        "gap_mobile": 16,
+        "row_gap_mobile": 16,
+        "padding_top": 100,
+        "padding_bottom": 0,
+        "enable_preload_image": false,
+        "custom_class": ""
+      }
+    },
+    "multiple_image_with_text_9qDmdr": {
+      "type": "multiple-image-with-text",
+      "blocks": {
+        "image_with_text_KNYb9d": {
+          "type": "image_with_text",
+          "settings": {
+            "color_scheme": "scheme-blush",
+            "sub_title": "— 01 —",
+            "title": "Wholesale & Reselling",
+            "text_size": "h2",
+            "text": "<p>Boutiques, online stores, and retail chains gain access to our exclusive imported collections with importing, customs, and logistics handled entirely by us.</p><ul><li>Exclusive collections sourced from Dubai & India</li><li>Competitive wholesale pricing</li><li>Custom sourcing on request</li></ul>",
+            "desc_size": "text-base",
+            "text_alignment": "left",
+            "button_label": "become a reseller",
+            "button_link": "",
+            "button_style": "m-button--primary",
+            "button_size": "m-button--large"
+          }
+        },
+        "image_with_text_Vhc73c": {
+          "type": "image_with_text",
+          "settings": {
+            "color_scheme": "scheme-blush",
+            "sub_title": "— 02 —",
+            "title": "Repairs & Restoration",
+            "text_size": "h2",
+            "text": "<p>Clasps, re-stringing, stone replacement, replating, and polishing — for Pearlings pieces and treasured heirlooms alike, handled by craftspeople who know the work.</p><ul><li>Restringing, resizing & clasp replacement</li><li>Stone setting, replating & polishing</li><li>Free assessment before any work begins</li></ul>",
+            "desc_size": "text-base",
+            "text_alignment": "left",
+            "button_label": "request a repair",
+            "button_link": "",
+            "button_style": "m-button--primary",
             "button_size": "m-button--large"
           }
         }
       },
       "block_order": [
-        "heading_LkgWA9",
-        "text_imb8FG",
-        "button_g93yWN"
+        "image_with_text_KNYb9d",
+        "image_with_text_Vhc73c"
       ],
       "custom_css": [
-        ".m-richtext {max-width: 830px; width: 100%; margin: 0 auto;}"
+        ".m-iwt {border: 1px solid #6e2f611a; border-radius: 2px;}",
+        ".m-iwt__wrapper {border-radius: 2px;}",
+        ".m-richtext__subtitle {font-size: 12px; letter-spacing: 4px; color: #c2a24e; font-weight: 500;}"
+      ],
+      "name": "Multiple image with text",
+      "settings": {
+        "heading": "",
+        "heading_size": "h3",
+        "subheading": "",
+        "header_alignment": "center",
+        "container": "container",
+        "color_scheme": "scheme-light",
+        "column_gap": 100,
+        "column_gap_mobile": 16,
+        "show_pagination": false,
+        "show_navigation": false,
+        "autorotate": false,
+        "autorotate_speed": 5,
+        "padding_top": 0,
+        "padding_bottom": 100,
+        "custom_class": "",
+        "animations": "inherit"
+      }
+    },
+    "rich_text_cxT76R": {
+      "type": "rich-text",
+      "blocks": {
+        "subheading_APVHj3": {
+          "type": "subheading",
+          "settings": {
+            "subheading": "WHOLESALE PROGRAM"
+          }
+        },
+        "heading_UzTxfr": {
+          "type": "heading",
+          "settings": {
+            "heading": "Born from a simple vision. Beautiful, high-quality<br> jewellery for <i style=\"color:#C2A24E;\">everyone who cherish it.</i>",
+            "heading_size": "h2"
+          }
+        },
+        "text_bwkgmE": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Whether you own a boutique, an online store, or a retail chain, our wholesale program<br/>gives you access to exclusive collections that help your business stand out.</p>",
+            "text_size": "text-base"
+          }
+        },
+        "button_kkENMf": {
+          "type": "button",
+          "settings": {
+            "button_label": "REGISTER AS A RESELLER",
+            "button_link": "",
+            "button_style": "m-button--secondary",
+            "button_size": ""
+          }
+        }
+      },
+      "block_order": [
+        "subheading_APVHj3",
+        "heading_UzTxfr",
+        "text_bwkgmE",
+        "button_kkENMf"
+      ],
+      "disabled": true,
+      "custom_css": [
+        ".m-richtext__subtitle {font-size: 12px; letter-spacing: 4px; color: #dd88a2;}"
       ],
       "name": "Rich text",
       "settings": {
-        "container": "container-full",
-        "color_scheme": "",
-        "content_alignment": "left",
+        "container": "container",
+        "color_scheme": "scheme-plum",
+        "content_alignment": "center",
         "padding_top": 100,
-        "padding_bottom": 0,
+        "padding_bottom": 100,
         "custom_class": "",
         "animations": "inherit"
       }
     },
     "image_with_text_XyDRYQ": {
       "type": "image-with-text",
+      "custom_css": [
+        ".m-richtext__subtitle {font-size: 12px; letter-spacing: 4px; color: #dd88a2;}",
+        ".rte strong {font-size: 14px; letter-spacing: 2px; color: #6e2f61;}"
+      ],
       "name": "Image with text",
       "settings": {
         "heading": "",
         "heading_size": "h3",
         "subheading": "",
-        "container": "container-fluid",
-        "color_scheme": "",
+        "container": "container",
+        "color_scheme": "scheme-light",
         "item_gap": 100,
         "item_gap_mobile": 30,
         "layout": "right",
@@ -278,18 +528,18 @@
         "link": "",
         "link_2": "",
         "second_image_offset_top": 10,
-        "sub_title": "",
+        "sub_title": "FROM THE ATLIER",
         "title": "A Word From Our Founder",
         "text_size": "h2",
-        "text": "<p><em>\"At Pearlings Designer Collection, our vision has always been simple—bring beautiful, high-quality jewelry to customers while building lasting relationships with our retail partners. Every piece in our collection is selected with care, focusing on craftsmanship, elegance, and value. We believe jewelry should not only enhance style but also create confidence and memorable experiences. Thank you for being part of our journey, and we look forward to growing together.\"</em></p><p>— <strong>Founder, Pearlings Designer Collection</strong></p>",
+        "text": "<p><em>\"At Pearlings Designer Collection, our vision has always been simple—bring beautiful, high-quality jewelry to customers while building lasting relationships with our retail partners. Every piece in our collection is selected with care, focusing on craftsmanship, elegance, and value. We believe jewelry should not only enhance style but also create confidence and memorable experiences. Thank you for being part of our journey, and we look forward to growing together.\"</em></p><p>— <strong>FOUNDER, PEARLINGS DESIGNER COLLECTION</strong></p>",
         "desc_size": "text-lg",
         "content_alignment": "left",
         "button_label": "",
         "button_link": "",
         "button_style": "m-button--link",
         "button_size": "",
-        "padding_top": 50,
-        "padding_bottom": 50,
+        "padding_top": 100,
+        "padding_bottom": 100,
         "custom_class": "",
         "animations": "inherit"
       }
@@ -297,10 +547,13 @@
   },
   "order": [
     "main",
-    "custom-content",
+    "image_with_text_2_NAUj7h",
+    "rich_text_Qxrmc4",
     "custom_content_TzEwWB",
     "store_locator_eT9fhi",
-    "rich_text_x7EqcG",
+    "custom_content_mUyPUw",
+    "multiple_image_with_text_9qDmdr",
+    "rich_text_cxT76R",
     "image_with_text_XyDRYQ"
   ]
 }

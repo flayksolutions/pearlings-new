@@ -11,11 +11,67 @@
   "type": "footer",
   "name": "Footer",
   "sections": {
+    "scrolling_promotion_P8g84G": {
+      "type": "scrolling-promotion",
+      "blocks": {
+        "image_ACntTC": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/210535_whatsapp-image-2025-10-22-at-2.37.09-pm.jpg",
+            "image_height": 182,
+            "image_link": ""
+          }
+        },
+        "image_iGkkDU": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/210535_whatsapp-image-2025-10-22-at-2.37.09-pm.jpg",
+            "image_height": 182,
+            "image_link": ""
+          }
+        },
+        "image_p8BYwM": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/210535_whatsapp-image-2025-10-22-at-2.37.09-pm.jpg",
+            "image_height": 182,
+            "image_link": ""
+          }
+        },
+        "image_TVUJx6": {
+          "type": "image",
+          "settings": {
+            "image_height": 120,
+            "image_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_ACntTC",
+        "image_iGkkDU",
+        "image_p8BYwM",
+        "image_TVUJx6"
+      ],
+      "disabled": true,
+      "name": "Scrolling promotion",
+      "settings": {
+        "container": "w-full",
+        "direction": "left",
+        "speed": 30,
+        "item_gap": 16,
+        "item_gap_mobile": 30,
+        "color_scheme": "",
+        "padding_top": 40,
+        "padding_bottom": 40,
+        "custom_class": ""
+      }
+    },
     "footer": {
       "type": "footer",
       "blocks": {
         "7b0bf4c6-3873-4222-b8d6-ce009e710078": {
           "type": "newsletter",
+          "disabled": true,
           "settings": {
             "title": "Let’s get in touch",
             "heading_size": "h3",
@@ -38,6 +94,7 @@
         },
         "12ba5a79-51a6-413a-9802-6add59615034": {
           "type": "spacing",
+          "disabled": true,
           "settings": {
             "width": "20%"
           }
@@ -45,8 +102,22 @@
         "7ebc2f78-975b-4a81-b874-103c3355a866": {
           "type": "menu",
           "settings": {
-            "menu": "footer",
+            "menu": "footer-menu-quick-links",
             "title": "Quick links",
+            "heading_size": "h6",
+            "heading_font": "heading",
+            "heading_font_weight": "medium",
+            "width": "33%",
+            "order_first": false,
+            "enable_accordion": true,
+            "open_default": false
+          }
+        },
+        "menu_Ue4WWp": {
+          "type": "menu",
+          "settings": {
+            "menu": "footer-menu-shop",
+            "title": "Shop",
             "heading_size": "h6",
             "heading_font": "heading",
             "heading_font_weight": "medium",
@@ -59,7 +130,7 @@
         "49e72833-c68f-4a7b-ab64-3ef0cae99bcb": {
           "type": "menu",
           "settings": {
-            "menu": "footer",
+            "menu": "footer-menu-information",
             "title": "Information",
             "heading_size": "h6",
             "heading_font": "heading",
@@ -93,19 +164,21 @@
         "7b0bf4c6-3873-4222-b8d6-ce009e710078",
         "12ba5a79-51a6-413a-9802-6add59615034",
         "7ebc2f78-975b-4a81-b874-103c3355a866",
+        "menu_Ue4WWp",
         "49e72833-c68f-4a7b-ab64-3ef0cae99bcb",
         "93571032-b171-4c66-8b3e-96cd91946363"
       ],
       "custom_css": [
         ".social-media-links {gap: 12px; margin: 0; padding: 5px 0;}",
         ".social-media-links a {color: #222; width: 48px; height: 48px; padding: 0; display: inline-flex; align-items: center; justify-content: center; border-radius: 50%; background-color: #e9e9e9; transition: all 0.3s;}",
-        ".social-media-links a:hover {background-color: #222; color: #fff; box-shadow: 0 0 0 0.2rem #222;}"
+        ".social-media-links a:hover {background-color: #222; color: #fff; box-shadow: 0 0 0 0.2rem #222;}",
+        ".m-footer--accordion {border-top: 1px solid rgb(var(--color-border));}"
       ],
       "settings": {
-        "color_scheme": "scheme-plum",
+        "color_scheme": "scheme-light",
         "design": "footer-1",
         "container": "container-fluid",
-        "bordered": false,
+        "bordered": true,
         "copyright": "All Rights Reserved © Pearlings",
         "show_country_selector": false,
         "show_currency_selector": false,
@@ -114,7 +187,7 @@
         "enable_follow_on_shop": true,
         "show_payment_icons": true,
         "payment_icons_width": 300,
-        "footer_bottom_color_scheme": "",
+        "footer_bottom_color_scheme": "scheme-plum",
         "footer_bottom_menu": "",
         "show_menu_item_divider": false
       }
@@ -172,6 +245,7 @@
     }
   },
   "order": [
+    "scrolling_promotion_P8g84G",
     "footer",
     "mobile-sticky-bar",
     "age-verifier-popup"

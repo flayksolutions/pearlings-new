@@ -50,7 +50,7 @@
           "settings": {
             "color_scheme": "",
             "image": "shopify://shop_images/210463_gemini_generated_image_jo7dgojo7dgojo7d_9f25f6dd-b004-4860-98c5-649e8a4acfd7.png",
-            "link": "",
+            "link": "shopify://collections/bridal-sets-complete",
             "content_position": "bottom_left",
             "content_alignment": "left",
             "text_color": "white",
@@ -81,7 +81,7 @@
         "product_to_show": 6,
         "item_gap": 30,
         "row_gap": 30,
-        "pcard_layout": "5",
+        "pcard_layout": "6",
         "pcard_image_ratio": "",
         "show_vendor": false,
         "hide_title": false,
@@ -135,13 +135,13 @@
           "settings": {
             "title": "Contemporary Sets",
             "collection_1": "cubic-zirconia-full-necklace-set",
-            "image_1": "shopify://shop_images/210322_gemini_generated_image_eck2f1eck2f1eck2.png",
+            "image_1": "{{ block.settings.collection_1.image }}",
             "collection_2": "cubic-zirconia-choker-earring-set",
-            "image_2": "shopify://shop_images/210319_gemini_generated_image_4rwtan4rwtan4rwt.png",
+            "image_2": "{{ block.settings.collection_2.image }}",
             "collection_3": "cubic-zirconia-necklace-earring-set",
-            "image_3": "shopify://shop_images/210321_gemini_generated_image_fgf4f8fgf4f8fgf4.png",
+            "image_3": "{{ block.settings.collection_3.image }}",
             "collection_4": "cubic-zirconia-pendant-earring-set",
-            "image_4": "shopify://shop_images/209891_gemini_generated_image_rf5yburf5yburf5y.png",
+            "image_4": "{{ block.settings.collection_4.image }}",
             "collection_5": "",
             "collection_6": ""
           }
@@ -171,9 +171,9 @@
             "collection_2": "antique-silver-necklace-set-antique-necklace-designs",
             "image_2": "{{ block.settings.collection_2.image }}",
             "collection_3": "mangal-sutra",
-            "image_3": "shopify://shop_images/261322_gemini_generated_image_wj1d0uwj1d0uwj1d-1.png",
+            "image_3": "{{ block.settings.collection_3.image }}",
             "collection_4": "haldi-flower-sets",
-            "image_4": "shopify://shop_images/259098_gemini_generated_image_5let9e5let9e5let.png",
+            "image_4": "{{ block.settings.collection_4.image }}",
             "collection_5": "",
             "collection_6": ""
           }
@@ -306,7 +306,8 @@
             "title": "Bangles",
             "collection_1": "bridal-chuda-bangles",
             "image_1": "{{ block.settings.collection_1.image }}",
-            "collection_2": "indian-styles-bangles",
+            "collection_2": "cubic-zirconia-designs",
+            "image_2": "{{ block.settings.collection_2.image }}",
             "collection_3": "indian-styles-bangles",
             "image_3": "{{ block.settings.collection_3.image }}",
             "collection_4": "colored-chudis",

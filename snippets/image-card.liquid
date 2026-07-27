@@ -4,6 +4,12 @@
   assign text_color = block.settings.text_color
   assign button_fixed = block.settings.button_fixed
 
+  assign image_mask = block.settings.image_mask | default: 'none'
+assign mask_class = ''
+if image_mask != 'none'
+  assign mask_class = ' m-image-card__img--mask-' | append: image_mask
+endif
+
   if text_size == null
     assign text_size = block.settings.text_size
   endif
@@ -74,7 +80,7 @@
     assign mobile_image = image
   endif
   
-  assign classes = 'm-image-card' | append: ' ' | append: image_card_class | append: ' ' | append: grid_columns 
+  assign classes = 'm-image-card' | append: ' ' | append: image_card_class | append: ' ' | append: grid_columns | append: ' ' | append: mask_class
   if stack_on_mobile == true or use_content_above == false
     assign classes = classes | append: ' m-image-card--content-stack'
   endif
@@ -102,6 +108,7 @@
 <div class="{{ classes }}{% if color_scheme_inherit %} color-scheme-inherit{% endif %}">
   <div class="m-image-card__inner {{ color_scheme_classes }}{% unless color_scheme_inherit %} m:blocks-radius{% endunless %}">
     <{% if block.settings.link %}a href="{{ block.settings.link | default: "#" }}" aria-label="{{ block.settings.title | default: 'image card ' | append: block.id }}"{% else %}div{% endif %} class="m-image-card__img{% if color_scheme_inherit %} m:blocks-radius{% endif %} m:block m:h-full" style="--aspect-ratio: {{ aspect_ratio }}; --aspect-ratio-mobile: {{ aspect_ratio_mobile }};">
+    {% comment %} <{% if block.settings.link %}a href="{{ block.settings.link | default: "#" }}" aria-label="{{ block.settings.title | default: 'image card ' | append: block.id }}"{% else %}div{% endif %} class="m-image-card__img{{ mask_class }}{% if color_scheme_inherit %} m:blocks-radius{% endif %} m:block m:h-full" style="--aspect-ratio: {{ aspect_ratio }}; --aspect-ratio-mobile: {{ aspect_ratio_mobile }};"> {% endcomment %}
       <div class="m-media">
         {% if image == blank %}
           {% liquid
@@ -113,6 +120,7 @@
           {% capture current %}{% cycle 1, 2, 3, 4, 5 %}{% endcapture %}
           {{ 'collection-' | append: current | placeholder_svg_tag: placeholder_svg_tag }}
         {% endif %}
+        <div class="m-image-card__gradient"></div>
         {% if image != blank or block.settings.mobile_image != blank %}
           <picture class="m-media__wrapper m:block m:w-full m:h-full{% if image == blank %} md:m:hidden{% endif %}">
             {%- if block.settings.mobile_image != blank -%}

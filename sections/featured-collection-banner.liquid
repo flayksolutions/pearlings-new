@@ -84,6 +84,8 @@
                         render 'product-card-4', product: product, image_ratio: image_ratio, show_vendor: show_vendor, hide_title: hide_title, index: forloop.index, animated: animated, animation_effect: animation_effect
                       when '5'
                         render 'product-card-5', product: product, image_ratio: image_ratio, show_vendor: show_vendor, hide_title: hide_title, index: forloop.index, animated: animated, animation_effect: animation_effect
+                      when '6'
+                        render 'product-card-catalog', product: product, image_ratio: image_ratio, show_vendor: show_vendor, hide_title: hide_title, index: forloop.index, animated: animated, animation_effect: animation_effect
                     endcase
                   %}
                 </div>
@@ -305,6 +307,10 @@
         {
           "value": "5",
           "label": "Style 5"
+        },
+        {
+          "value": "6",
+          "label": "Custom card image"
         }
       ]
     },

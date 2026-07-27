@@ -12,10 +12,9 @@
     "collection-header": {
       "type": "collection-page-header",
       "settings": {
-        "color_scheme": "",
+        "color_scheme": "scheme-rose",
         "container": "w-full",
         "layout": "inside",
-        "bg_image": "shopify://shop_images/210212_gemini_generated_image_rp04rerp04rerp04_a45f41b9-b889-4720-ac63-99517a7c1eea.png",
         "image_position": "background",
         "enable_parallax": false,
         "parallax_direction": "vertical",

@@ -1,0 +1,708 @@
+{%- comment -%}
+  Testimonial Marquee Section
+  ---------------------------
+  Two rows of testimonial cards auto-scrolling in opposite directions,
+  with a soft gradient fade on both edges. Heading, rating, and every
+  testimonial are editable as blocks from the theme editor. Background
+  and card colors are set directly via the section's color pickers.
+  Heading and body text inherit the theme's own fonts (no font-family
+  is set here), so headings keep using the theme's Newsreader styling.
+{%- endcomment -%}
+
+{%- liquid
+  assign row1_cards = ''
+  assign row2_cards = ''
+
+  for block in section.blocks
+    capture card_markup
+      echo '<div class="testimonial-card" '
+      echo block.shopify_attributes
+      echo '>'
+      echo '<div class="testimonial-card__top">'
+
+      if block.settings.avatar != blank
+        echo '<img class="testimonial-card__avatar" src="'
+        echo block.settings.avatar | image_url: width: 96
+        echo '" width="48" height="48" loading="lazy" alt="'
+        echo block.settings.name | escape
+        echo '">'
+      else
+        echo '<div class="testimonial-card__avatar testimonial-card__avatar--placeholder" aria-hidden="true">'
+        echo block.settings.name | slice: 0, 1
+        echo '</div>'
+      endif
+
+      echo '<div class="testimonial-card__identity">'
+      if block.settings.name != blank
+        echo '<p class="testimonial-card__name">'
+        echo block.settings.name
+        echo '</p>'
+      endif
+      if block.settings.role != blank
+        echo '<p class="testimonial-card__role">'
+        echo block.settings.role
+        echo '</p>'
+      endif
+      echo '</div>'
+
+      if block.settings.rating > 0
+        echo '<div class="testimonial-card__rating" role="img" aria-label="'
+        echo block.settings.rating
+        echo ' out of 5 stars">'
+        for i in (1..5)
+          if i <= block.settings.rating
+            echo '<svg class="testimonial-card__star" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path d="M10 1.5l2.59 5.25 5.79.84-4.19 4.08.99 5.77L10 14.77l-5.18 2.67.99-5.77L1.62 7.59l5.79-.84L10 1.5z"/></svg>'
+          else
+            echo '<svg class="testimonial-card__star testimonial-card__star--empty" viewBox="0 0 20 20" fill="none" stroke="currentColor" aria-hidden="true"><path d="M10 1.5l2.59 5.25 5.79.84-4.19 4.08.99 5.77L10 14.77l-5.18 2.67.99-5.77L1.62 7.59l5.79-.84L10 1.5z"/></svg>'
+          endif
+        endfor
+        echo '</div>'
+      endif
+
+      echo '</div>'
+
+      if block.settings.testimonial != blank
+        echo '<div class="testimonial-card__text-wrap">'
+        echo '<p class="testimonial-card__text" data-testimonial-text>'
+        echo block.settings.testimonial | newline_to_br
+        echo '</p>'
+        echo '<button type="button" class="testimonial-card__toggle is-hidden" data-testimonial-toggle>See more</button>'
+        echo '</div>'
+      endif
+
+      echo '</div>'
+    endcapture
+
+    if block.settings.row == '2'
+      assign row2_cards = row2_cards | append: card_markup
+    else
+      assign row1_cards = row1_cards | append: card_markup
+    endif
+  endfor
+-%}
+
+<section
+  id="testimonial-marquee-{{ section.id }}"
+  class="testimonial-marquee"
+  style="
+    --tm-bg: {{ section.settings.background_color }};
+    --tm-card: {{ section.settings.card_color }};
+    --tm-star: {{ section.settings.star_color }};
+    --tm-duration: {{ section.settings.speed }}s;
+    --tm-radius: {{ section.settings.card_radius }}px;
+  "
+>
+  <div class="testimonial-marquee__inner">
+    <div class="testimonial-marquee__header page-width">
+      {%- if section.settings.eyebrow_text != blank -%}
+        <span class="testimonial-marquee__badge">{{ section.settings.eyebrow_text }}</span>
+      {%- endif -%}
+
+      {%- if section.settings.heading != blank -%}
+        <h2 class="testimonial-marquee__heading">{{ section.settings.heading }}</h2>
+      {%- endif -%}
+
+      {%- if section.settings.rating_value > 0 -%}
+        <div class="testimonial-marquee__rating">
+          <div class="testimonial-marquee__rating-stars" role="img" aria-label="{{ section.settings.rating_value }} out of 5 stars">
+            {%- assign rounded_rating = section.settings.rating_value | round -%}
+            {%- for i in (1..5) -%}
+              {%- if i <= rounded_rating -%}
+                <svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path d="M10 1.5l2.59 5.25 5.79.84-4.19 4.08.99 5.77L10 14.77l-5.18 2.67.99-5.77L1.62 7.59l5.79-.84L10 1.5z"/></svg>
+              {%- else -%}
+                <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" aria-hidden="true"><path d="M10 1.5l2.59 5.25 5.79.84-4.19 4.08.99 5.77L10 14.77l-5.18 2.67.99-5.77L1.62 7.59l5.79-.84L10 1.5z"/></svg>
+              {%- endif -%}
+            {%- endfor -%}
+          </div>
+          {%- if section.settings.review_count > 0 -%}
+            <p class="testimonial-marquee__rating-count">
+              Based on
+              <strong>{{ section.settings.review_count }}</strong>
+              reviews
+            </p>
+          {%- endif -%}
+
+          <img src="{{ 'google-logo.png' | asset_url }}" alt="Google Logo" width="auto" height="86" style="height: 86px; width: auto;" loading="lazy">
+        </div>
+      {%- endif -%}
+    </div>
+
+    <div class="testimonial-marquee__viewport">
+      <div class="testimonial-marquee__fade testimonial-marquee__fade--left" aria-hidden="true"></div>
+      <div class="testimonial-marquee__fade testimonial-marquee__fade--right" aria-hidden="true"></div>
+
+      {%- if row1_cards != '' -%}
+        <div
+          class="testimonial-marquee__track testimonial-marquee__track--left"
+          {% if section.settings.pause_on_hover %}data-pause-hover{% endif %}
+        >
+          <div class="testimonial-marquee__group">{{ row1_cards }}</div>
+          <div class="testimonial-marquee__group" aria-hidden="true">{{ row1_cards }}</div>
+        </div>
+      {%- endif -%}
+
+      {%- if row2_cards != '' -%}
+        <div
+          class="testimonial-marquee__track testimonial-marquee__track--right"
+          {% if section.settings.pause_on_hover %}data-pause-hover{% endif %}
+        >
+          <div class="testimonial-marquee__group">{{ row2_cards }}</div>
+          <div class="testimonial-marquee__group" aria-hidden="true">{{ row2_cards }}</div>
+        </div>
+      {%- endif -%}
+
+      {%- if row1_cards == '' and row2_cards == '' -%}
+        <div class="testimonial-marquee__empty page-width">
+          <p>Add testimonial blocks to get started.</p>
+        </div>
+      {%- endif -%}
+    </div>
+  </div>
+</section>
+
+{% style %}
+  .testimonial-marquee {
+    background: var(--tm-bg);
+    color: #1a1a1a;
+    padding: 84px 0 92px;
+    overflow: hidden;
+  }
+
+  .testimonial-marquee__inner {
+    max-width: 1400px;
+    margin: 0 auto;
+    overflow: hidden;
+  }
+
+  .testimonial-marquee__header {
+    max-width: 640px;
+    margin: 0 auto;
+    padding: 0 24px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 14px;
+    margin-bottom: 44px;
+  }
+
+  .testimonial-marquee__badge {
+    display: block;
+    color: #6b6b6b;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+  }
+
+  .testimonial-marquee__heading {
+    margin: 0;
+    font-size: clamp(28px, 4vw, 40px);
+    font-family: Newsreader, serif;
+    line-height: 1.15;
+    font-weight: 500;
+    /* text-transform: uppercase; */
+    color: #6e2f61;
+  }
+
+  .testimonial-marquee__rating {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+    margin-top: 4px;
+  }
+
+  .testimonial-marquee__rating-stars {
+    display: flex;
+    gap: 4px;
+  }
+
+  .testimonial-marquee__rating-stars svg {
+    width: 20px;
+    height: 20px;
+    color: var(--tm-star);
+  }
+
+  .testimonial-marquee__rating-count {
+    margin: 0;
+    font-size: 15px;
+    color: #1a1a1a;
+  }
+
+  .testimonial-marquee__rating-count strong {
+    font-weight: 700;
+  }
+
+  .testimonial-marquee__viewport {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .testimonial-marquee__fade {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 140px;
+    z-index: 2;
+    pointer-events: none;
+  }
+
+  .testimonial-marquee__fade--left {
+    left: 0;
+    background: linear-gradient(to right, var(--tm-bg) 0%, transparent 100%);
+  }
+
+  .testimonial-marquee__fade--right {
+    right: 0;
+    background: linear-gradient(to left, var(--tm-bg) 0%, transparent 100%);
+  }
+
+  @media screen and (max-width: 749px) {
+    .testimonial-marquee__fade {
+      width: 56px;
+    }
+
+    .testimonial-marquee {
+      padding: 56px 0 64px;
+    }
+
+    .testimonial-marquee__header {
+      gap: 10px;
+      margin-bottom: 32px;
+    }
+
+    .testimonial-card {
+      padding: 18px 20px;
+    }
+
+    .testimonial-marquee__group {
+      gap: 14px;
+    }
+  }
+
+  .testimonial-marquee__track {
+    display: flex;
+    width: max-content;
+  }
+
+  .testimonial-marquee__track--left {
+    animation: testimonial-marquee-left var(--tm-duration) linear infinite;
+  }
+
+  .testimonial-marquee__track--right {
+    animation: testimonial-marquee-right var(--tm-duration) linear infinite;
+  }
+
+  .testimonial-marquee__track[data-pause-hover]:hover {
+    animation-play-state: paused;
+  }
+
+  .testimonial-marquee__group {
+    display: flex;
+    align-items: stretch;
+    gap: 20px;
+    padding: 0 10px;
+  }
+
+  @keyframes testimonial-marquee-left {
+    from { transform: translateX(0); }
+    to { transform: translateX(-50%); }
+  }
+
+  @keyframes testimonial-marquee-right {
+    from { transform: translateX(-50%); }
+    to { transform: translateX(0); }
+  }
+
+  .testimonial-card {
+    flex: 0 0 auto;
+    width: min(360px, 82vw);
+    background: var(--tm-card);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: var(--tm-radius);
+    padding: 22px 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+  }
+
+  .testimonial-card__top {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+  }
+
+  .testimonial-card__avatar {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    object-fit: cover;
+    flex-shrink: 0;
+  }
+
+  .testimonial-card__avatar--placeholder {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.08);
+    color: #4a4a4a;
+    font-weight: 600;
+    font-size: 16px;
+    text-transform: uppercase;
+  }
+
+  .testimonial-card__identity {
+    flex: 1;
+    min-width: 0;
+  }
+
+  .testimonial-card__name {
+    margin: 0;
+    font-size: 16px;
+    font-weight: 600;
+    color: #1a1a1a;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .testimonial-card__role {
+    margin: 2px 0 0;
+    font-size: 14px;
+    color: #767676;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .testimonial-card__rating {
+    display: flex;
+    gap: 2px;
+    flex-shrink: 0;
+    padding-top: 2px;
+  }
+
+  .testimonial-card__star {
+    width: 15px;
+    height: 15px;
+    color: var(--tm-star);
+  }
+
+  .testimonial-card__star--empty {
+    color: color-mix(in srgb, var(--tm-star) 35%, transparent);
+  }
+
+  .testimonial-card__text-wrap {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+  }
+
+  .testimonial-card__text {
+    margin: 0;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333333;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 4;
+    overflow: hidden;
+  }
+
+  .testimonial-card__text.is-expanded {
+    -webkit-line-clamp: unset;
+    display: block;
+    overflow: visible;
+  }
+
+  .testimonial-card__toggle {
+    align-self: flex-start;
+    background: none;
+    border: none;
+    padding: 0;
+    margin: 0;
+    font: inherit;
+    font-size: 13px;
+    font-weight: 600;
+    color: inherit;
+    text-decoration: underline;
+    text-underline-offset: 2px;
+    cursor: pointer;
+  }
+
+  .testimonial-card__toggle:hover {
+    opacity: 0.75;
+  }
+
+  .testimonial-card__toggle[hidden],
+  .testimonial-card__toggle.is-hidden {
+    display: none !important;
+  }
+
+  .testimonial-marquee__empty {
+    padding: 0 24px;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .testimonial-marquee__track {
+      animation: none;
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+    }
+  }
+{% endstyle %}
+
+<script>
+  (function () {
+    var root = document.getElementById('testimonial-marquee-{{ section.id }}');
+    if (!root) return;
+
+    var pairs = [];
+    root.querySelectorAll('[data-testimonial-text]').forEach(function (textEl) {
+      var button = textEl.parentElement.querySelector('[data-testimonial-toggle]');
+      if (!button) return;
+      pairs.push({ text: textEl, button: button });
+
+      button.addEventListener('click', function () {
+        var expanded = textEl.classList.toggle('is-expanded');
+        button.textContent = expanded ? 'See less' : 'See more';
+      });
+    });
+
+    if (!pairs.length) return;
+
+    function checkOverflow() {
+      pairs.forEach(function (pair) {
+        if (pair.text.classList.contains('is-expanded')) return;
+        var overflowing = pair.text.scrollHeight - pair.text.clientHeight > 1;
+        pair.button.classList.toggle('is-hidden', !overflowing);
+      });
+    }
+
+    // Text height can only be measured accurately once the theme's fonts
+    // have finished loading, so we check at several points rather than once.
+    checkOverflow();
+    window.requestAnimationFrame(function () {
+      window.requestAnimationFrame(checkOverflow);
+    });
+    window.addEventListener('load', checkOverflow);
+    window.addEventListener('resize', checkOverflow);
+    if (document.fonts && document.fonts.ready) {
+      document.fonts.ready.then(checkOverflow);
+    }
+    setTimeout(checkOverflow, 500);
+    setTimeout(checkOverflow, 1500);
+  })();
+</script>
+
+{% schema %}
+{
+  "name": "Testimonial marquee",
+  "tag": "section",
+  "class": "section testimonial-marquee-section",
+  "settings": [
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "Background color",
+      "default": "#FAFAFA"
+    },
+    {
+      "type": "color",
+      "id": "card_color",
+      "label": "Card color",
+      "default": "#FFFFFF"
+    },
+    {
+      "type": "header",
+      "content": "Content"
+    },
+    {
+      "type": "text",
+      "id": "eyebrow_text",
+      "label": "Text above heading",
+      "default": "Loved by thousands"
+    },
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading",
+      "default": "Happy Customers"
+    },
+    {
+      "type": "header",
+      "content": "Rating summary"
+    },
+    {
+      "type": "range",
+      "id": "rating_value",
+      "label": "Star rating",
+      "min": 0,
+      "max": 5,
+      "step": 0.5,
+      "default": 5
+    },
+    {
+      "type": "number",
+      "id": "review_count",
+      "label": "Number of reviews",
+      "default": 250
+    },
+    {
+      "type": "color",
+      "id": "star_color",
+      "label": "Star color",
+      "info": "Ratings stay gold by default, independent of the background/card colors.",
+      "default": "#F5B400"
+    },
+    {
+      "type": "header",
+      "content": "Card style"
+    },
+    {
+      "type": "range",
+      "id": "card_radius",
+      "label": "Card corner radius",
+      "min": 0,
+      "max": 32,
+      "step": 1,
+      "unit": "px",
+      "default": 16
+    },
+    {
+      "type": "header",
+      "content": "Marquee behavior"
+    },
+    {
+      "type": "range",
+      "id": "speed",
+      "label": "Scroll speed",
+      "info": "Higher is slower",
+      "min": 15,
+      "max": 100,
+      "step": 5,
+      "unit": "s",
+      "default": 45
+    },
+    {
+      "type": "checkbox",
+      "id": "pause_on_hover",
+      "label": "Pause on hover",
+      "default": true
+    }
+  ],
+  "blocks": [
+    {
+      "type": "testimonial",
+      "name": "Testimonial",
+      "settings": [
+        {
+          "type": "select",
+          "id": "row",
+          "label": "Row",
+          "info": "Top row scrolls left, bottom row scrolls right",
+          "options": [
+            { "value": "1", "label": "Row 1 (top)" },
+            { "value": "2", "label": "Row 2 (bottom)" }
+          ],
+          "default": "1"
+        },
+        {
+          "type": "image_picker",
+          "id": "avatar",
+          "label": "Avatar"
+        },
+        {
+          "type": "text",
+          "id": "name",
+          "label": "Name",
+          "default": "Customer name"
+        },
+        {
+          "type": "text",
+          "id": "role",
+          "label": "Role, handle, or date",
+          "default": "1 year ago"
+        },
+        {
+          "type": "range",
+          "id": "rating",
+          "label": "Rating",
+          "min": 0,
+          "max": 5,
+          "step": 1,
+          "default": 5
+        },
+        {
+          "type": "textarea",
+          "id": "testimonial",
+          "label": "Testimonial",
+          "default": "This completely changed how our team works. Setup was quick and support has been fantastic."
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Testimonial marquee",
+      "blocks": [
+        {
+          "type": "testimonial",
+          "settings": { "row": "1", "name": "aleesha nadeem", "role": "6 months ago", "rating": 5, "testimonial": "Absolutely beautiful jewelry and such an amazing variety to choose from! Every piece is unique and eye-catching, and there’s always something new to discover. They also often have great sales, which makes it even better. The owner is incredibly sweet, welcoming, and genuinely helpful—she makes the whole experience so enjoyable. Highly recommend checking this place out!" }
+        },
+        {
+          "type": "testimonial",
+          "settings": { "row": "2", "name": "Halle Tims", "role": "5 months ago", "rating": 5, "testimonial": "So glad I walked into this store! The store is filled with beautiful things! I’ll definitely be back & i caught some things on sale ☺️" }
+        },
+        {
+          "type": "testimonial",
+          "settings": { "row": "1", "name": "Aarifa Qazi", "role": "3 months ago", "rating": 5, "testimonial": "I had a wonderful experience at Pearlings. The jewelry selection is beautiful, but what truly made my visit special was the exceptional service from Dilshad. She was incredibly helpful, patient, and knowledgeable. Dilshad took the time to help me select several lovely sets for an upcoming family wedding and made the whole experience enjoyable and stress-free.\n\nHer attention to detail and genuine care for the customer really stood out. I’m very grateful for her help and would highly recommend Pearlings, and especially Dilshad, to anyone looking for beautiful jewelry and excellent service." }
+        },
+        {
+          "type": "testimonial",
+          "settings": { "row": "2", "name": "Mailynn Nguyen", "role": "2 months ago", "rating": 5, "testimonial": "My experience here at Pearlings was great. When you walk in you’re greeted by multiple people that will help you. Abbas is the owner and he’s very nice and helpful. Everything I tried on got me closer to the indian jewelry I needed. I came in for bridal jewelry and was able to find everything I needed here. Abbas has a good eye for jewelry and is able to customize any set so it will fit you exactly how you need." }
+        },
+        {
+          "type": "testimonial",
+          "settings": { "row": "1", "name": "Ellen Garre", "role": "6 months ago", "rating": 5, "testimonial": "Pearlings provides exceptional custom jewelry services. The quality of their craftsmanship and attention to detail are outstanding. I was pleasantly surprised by the quick turnaround time—my piece was completed in just two days, far sooner than expected. I highly recommend Pearlings and will certainly return for future jewelry needs." }
+        },
+        {
+          "type": "testimonial",
+          "settings": { "row": "2", "name": "Lauren McDonald", "role": "1 year ago", "rating": 5, "testimonial": "Amazing store that outfits me for my Nikkah and Walima.\n\nI came in with a general idea of what I wanted for my wedding jewelry to look like, and they exceeded my expectations. I wanted to have a simple look, and they accepted the challenge. They far exceeded everything and will continue to come back for my jewelry needs." }
+        },
+        {
+          "type": "testimonial",
+          "settings": { "row": "1", "name": "Sherebanu Ramakdawala", "role": "1 year ago", "rating": 5, "testimonial": "This is the perfect place for wedding jewelry shopping! The service is exceptional, with the owner and staff being incredibly helpful. They assisted me in finding jewelry to complement all my outfits, and the best part is their ability to customize sets to match my attire perfectly." }
+        },
+        {
+          "type": "testimonial",
+          "settings": { "row": "2", "name": "Jay Edwards", "role": "1 month ago", "rating": 5, "testimonial": "I love this place! The people are so nice. The jewelry beautiful and they always have great prices." }
+        },
+        {
+          "type": "testimonial",
+          "settings": { "row": "1", "name": "Leah", "role": "2 months ago", "rating": 5, "testimonial": "The ladies were very kind and helpful to my mother. They worked extra hard and 20 minutes past closing to help match jewelry to her dupatta. The store also had a very large selection of jewelry, shoes, bags, and more! I definitely recommend this place." }
+        },
+        {
+          "type": "testimonial",
+          "settings": { "row": "2", "name": "Maha", "role": "2 months ago", "rating": 5, "testimonial": "One of my absolute favorite places to go to in Houston whenever I need jewelry for an event. Abbas Bhai is always so helpful and has the best collection with a wide variety of sets to choose from. 10/10 highly recommend" }
+        },
+        {
+          "type": "testimonial",
+          "settings": { "row": "1", "name": "Hadassah Maples (Hads NM)", "role": "4 years ago", "rating": 4, "testimonial": "I don't even know where to start. This store is a one stop shop for everything. I got necklaces, earrings, bracelets, sandals and clutches for not only me, but my mom and in-laws. The owners are super helpful and nice. The prices are reasonable and the jewelry lasts long and they're amazing quality.\n\nEDIT: The clutch broke multiple times :(. I can't vouch for the quality of the clutch, but the jewelry and the sandals are still intact, so that's good." }
+        },
+        {
+          "type": "testimonial",
+          "settings": { "row": "2", "name": "Amber J. Yoga", "role": "10 months ago", "rating": 4, "testimonial": "Always wonderful finds." }
+        },
+        {
+          "type": "testimonial",
+          "settings": { "row": "1", "name": "Pakeezah Hazari", "role": "3 years ago", "rating": 4, "testimonial": "Good collection" }
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

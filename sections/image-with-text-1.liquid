@@ -50,6 +50,8 @@
     --column-gap: {{ section.settings.gap }}px;
     --column-gap-mobile: {{ section.settings.mobile_gap }}px
   }
+
+
 </style>
 
 <section
@@ -338,6 +340,17 @@
           "type": "image_picker",
           "id": "mobile_image",
           "label": "Mobile image"
+        },
+        {
+          "type": "select",
+          "id": "image_mask",
+          "label": "Image mask shape",
+          "options": [
+            { "value": "none", "label": "None" },
+            { "value": "mughal_arch", "label": "Mughal arch" }
+          ],
+          "default": "none",
+          "info": "Best suited to portrait-oriented images"
         },
         {
           "type": "url",

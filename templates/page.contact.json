@@ -9,14 +9,64 @@
  */
 {
   "sections": {
+    "image_with_text_2_WBpBxq": {
+      "type": "image-with-text-2",
+      "custom_css": [
+        ".m-hero__subtitle.h6 {font-size: 12px; letter-spacing: 4px; color: #dd88a2;}"
+      ],
+      "name": "Image with text overlay",
+      "settings": {
+        "color_scheme": "",
+        "container": "w-full",
+        "hero_size": "small",
+        "show_overlay": true,
+        "image": "shopify://shop_images/Pearlings_Bg.png",
+        "image_link": "",
+        "parallax": false,
+        "parallax_direction": "vertical",
+        "content_in_container": false,
+        "content_position": "center middle",
+        "text_alignment": "center",
+        "text_color": "white",
+        "title": "Get in <i style=\"color:#C2A24E;\">Touch</i>",
+        "text_size": "h2",
+        "subtitle": "WE'RE HERE FOR YOU",
+        "text": "",
+        "desc_size": "text-base",
+        "button_label": "",
+        "button_link": "",
+        "button_style": "m-button--primary",
+        "button_size": "",
+        "text_alignment_mobile": "center",
+        "use_content_above": false,
+        "custom_class": "",
+        "animations": "inherit",
+        "enable_bg_zoom_effect": true,
+        "enable_preload_image": false
+      }
+    },
     "main": {
       "type": "page-contact",
+      "blocks": {
+        "textblock_36Wdpc": {
+          "type": "textblock",
+          "settings": {
+            "title": "Block Title",
+            "content": "7895 Piermont Dr NE Albuquerque, NM 198866, <a href=\"#\">See Our Stores</a>"
+          }
+        }
+      },
+      "block_order": [
+        "textblock_36Wdpc"
+      ],
+      "disabled": true,
       "settings": {
         "container": "container"
       }
     },
     "maps": {
       "type": "maps",
+      "disabled": true,
       "settings": {
         "container": "container",
         "color_scheme": "",
@@ -84,14 +134,110 @@
         "show_phone": false,
         "show_signup_email": true,
         "padding_top": 60,
-        "padding_bottom": 0,
+        "padding_bottom": 80,
         "animations": "inherit"
+      }
+    },
+    "google_maps_embed_mnRgRV": {
+      "type": "google-maps-embed",
+      "blocks": {
+        "heading_QHxLqU": {
+          "type": "heading",
+          "settings": {
+            "heading": "Our store",
+            "heading_size": "h3"
+          }
+        },
+        "text_iFbCUk": {
+          "type": "text",
+          "settings": {
+            "text": "<p>6638 Southwest Fwy, Houston, TX 77074, United States</p><p>Mon - Sat, 11:00am - 08:00pm<br/>Sunday, 12:00am - 07:00pm</p>",
+            "text_size": "text-base"
+          }
+        },
+        "button_3egQTe": {
+          "type": "button",
+          "settings": {
+            "button_label": "Get directions",
+            "button_link": "",
+            "button_style": "m-button--primary"
+          }
+        }
+      },
+      "block_order": [
+        "heading_QHxLqU",
+        "text_iFbCUk",
+        "button_3egQTe"
+      ],
+      "name": "Google map (embed)",
+      "settings": {
+        "container": "w-full",
+        "color_scheme": "scheme-plum",
+        "map_height": "small",
+        "embed_code": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3465.0992066888152!2d-95.50036426994785!3d29.71688543483631!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8640c24a470ac5b9%3A0x831fb32e56d92b9b!2s6638%20Southwest%20Fwy%2C%20Houston%2C%20TX%2077074%2C%20USA!5e0!3m2!1sen!2sin!4v1784118995855!5m2!1sen!2sin\" width=\"600\" height=\"450\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"strict-origin-when-cross-origin\"></iframe>",
+        "text2": "Store location",
+        "content_position": "middle-right",
+        "text_alignment": "left",
+        "use_content_in_container": false,
+        "animations": "inherit",
+        "custom_class": ""
+      }
+    },
+    "maps_zfKrbU": {
+      "type": "maps",
+      "blocks": {
+        "heading_R4PpLE": {
+          "type": "heading",
+          "settings": {
+            "heading": "Our store",
+            "heading_size": "h3"
+          }
+        },
+        "text_m4bNCV": {
+          "type": "text",
+          "settings": {
+            "text": "<p>620 King Street West<br>Toronto, ON M5V 1M7, Canada</p><p>Mon - Fri, 8:30am - 10:30pm<br>Saturday, 8:30am - 10:30pm<br>Sunday, 8:30am - 10:30pm</p>",
+            "text_size": "text-base"
+          }
+        },
+        "button_RcMWb3": {
+          "type": "button",
+          "settings": {
+            "button_label": "Get directions",
+            "button_link": "",
+            "button_style": "m-button--primary"
+          }
+        }
+      },
+      "block_order": [
+        "heading_R4PpLE",
+        "text_m4bNCV",
+        "button_RcMWb3"
+      ],
+      "disabled": true,
+      "name": "Google map",
+      "settings": {
+        "container": "w-full",
+        "color_scheme": "scheme-plum",
+        "map_height": "medium",
+        "textx": "40.6700",
+        "texty": "-73.9400",
+        "zoom": "11",
+        "text2": "New York",
+        "content_position": "middle-left",
+        "text_alignment": "left",
+        "use_content_in_container": false,
+        "animations": "inherit",
+        "custom_class": ""
       }
     }
   },
   "order": [
+    "image_with_text_2_WBpBxq",
     "main",
     "maps",
-    "contact-form"
+    "contact-form",
+    "google_maps_embed_mnRgRV",
+    "maps_zfKrbU"
   ]
 }
